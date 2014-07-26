@@ -66,6 +66,10 @@ test/
 npm-debug.log
 _SpecRunner.html
 bower_components/
+bower/
 .idea
 .grunt
 reports
+
+# Database
+db.sqlite3

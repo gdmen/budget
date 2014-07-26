@@ -1,0 +1,17 @@
+{
+  "name": "budget",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gdmen/budget",
+  "authors": [
+    "Gary Menezes <gmenezes@alumni.upenn.edu>"
+  ],
+  "license": "GPL v3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
