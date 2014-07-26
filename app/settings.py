@@ -36,6 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tastypie',
+    'south',
+    'app.api'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +54,8 @@ ROOT_URLCONF = 'app.urls'
 
 WSGI_APPLICATION = 'app.wsgi.application'
 
+TASTYPIE_DEFAULT_FORMATS = ['json']
+TASTYPIE_DATETIME_FORMATTING  = 'rfc-2822'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
