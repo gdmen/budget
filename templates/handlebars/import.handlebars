@@ -1,0 +1,7 @@
+<form method="post" action="api/import" enctype="multipart/form-data" id="import-form">
+  {{ csrf_token }}
+  <input type="file" id="file" name="files[]" multiple >
+  <button type="submit" class"expand">
+    Import<i class="icon-file"></i>
+  </button>
+</form>

@@ -5,9 +5,8 @@ $(function () {
   var _sync = Backbone.sync;
   Backbone.sync = function(method, model, options) {
     if (method === 'create' || method === 'update' || method === 'delete') {
-      var csrf_token = $('meta[name="csrf-token"]').attr('content');
       options.beforeSend = function(xhr){
-        xhr.setRequestHeader('X-CSRFToken', csrf_token);
+        xhr.setRequestHeader('X-CSRFToken', App.csrf_token);
       };
     }
     return _sync(method, model, options);

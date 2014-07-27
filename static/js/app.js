@@ -7,6 +7,7 @@ App.addRegions({
 App.Meta = {};
 App.Models = {};
 App.Views = {};
+App.csrf_token = $('meta[name="csrf-token"]').attr('content');
 
 App.on('start', function (options) {
   Backbone.history.start();
