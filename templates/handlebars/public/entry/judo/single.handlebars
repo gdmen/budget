@@ -1,0 +1,138 @@
+{{! public/entry/judo/single }}
+<div class="entry public">
+
+  <div class="row">
+    <div class="columns entry-header">
+      <div class="entry-header-left">
+        <div class="date">
+          <h6 class="month">February</h6>
+          <span class="day">14</span>
+          <span class="year">2014</span>
+        </div>
+      </div>
+      
+      <div id="entry-rating">
+        {{> partials/rating }}
+      </div>
+      
+      <div class="entry-header-row">
+        <h1 id="art" class="headertext">{{ art.name }}</h1>
+        <h1 id="type" class="headertext">{{ type.name }}</h1>
+      </div>
+      
+      <div class="entry-header-section">
+      
+        <div class="entry-header-row">
+          <h5 id="location" class="headertext">
+            <a href="{{ profileLink }}">{{ user.username }}</a> @ {{ location.name }}</h5>
+        </div>
+        
+        <div class="entry-header-row">
+          <h5 id="date" class="headertext">
+            {{ displayDate }} ({{ displayDuration }})
+          </h5>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    {{#if drills}}
+      <div class="medium-10 large-8 columns">
+        <div class="module-section drill">
+          <div class="section-header">
+            <h3 class="list-title">Drills</h3>
+          </div>
+          <ul class="model-list row">
+            {{#each drills}}
+              <li class="{{#if name}}has-title {{/if}}{{#if details}}has-body {{/if}}model-entry columns">
+                {{#if details}}
+                  <div class="model-body-cap"></div>
+                {{/if}}
+                {{#if name}}
+                  <div class="model-header">
+                    <div class="model-title">
+                      {{ name }}
+                    </div>
+                  </div>
+                {{/if}}
+                {{#if details}}
+                  <div class="model-body">
+                    {{{ compiled_details }}}
+                  </div>
+                {{/if}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    {{/if}}
+
+    {{#if sparring}}
+      <div class="medium-10 large-8 columns">
+        <div class="module-section sparring">
+          <div class="section-header">
+            <h3 class="list-title">Sparring</h3>
+          </div>
+          <ul class="model-list row">
+            {{#each sparring}}
+              <li class="{{#if partner}}has-title {{/if}}{{#if details}}has-body {{/if}}model-entry columns">
+                {{#if details}}
+                  <div class="model-body-cap"></div>
+                {{/if}}
+                {{#if partner}}
+                  <div class="model-header">
+                    <div class="model-title">
+                      {{ partner }} ({{ minutes }} minutes)
+                    </div>
+                  </div>
+                {{/if}}
+                {{#if details}}
+                  <div class="model-body">
+                    {{{ compiled_details }}}
+                  </div>
+                {{/if}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    {{/if}}
+
+    {{#if notes}}
+      <div class="medium-10 large-8 columns end">
+        <div class="module-section note">
+          <div class="section-header">
+            <h3 class="list-title">Notes</h3>
+          </div>
+          <ul class="model-list row">
+            {{#each notes}}
+              <li class="{{#if title}}has-title {{/if}}{{#if details}}has-body {{/if}}model-entry columns">
+                {{#if details}}
+                  <div class="model-body-cap"></div>
+                {{/if}}
+                {{#if title}}
+                  <div class="model-header">
+                    <div class="model-title">
+                      {{ title }}
+                    </div>
+                  </div>
+                {{/if}}
+                {{#if details}}
+                  <div class="model-body">
+                    {{{ compiled_details }}}
+                  </div>
+                {{/if}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    {{/if}}
+    
+  </div>
+</div>
