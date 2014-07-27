@@ -2,7 +2,10 @@
 {% load staticfiles %}
 
 {% block js_ %}
+{% comment %}
   <script type="text/javascript" src="{% static 'js/templates.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/views.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/routes.js' %}"></script>
+{% endcomment %}
+  <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
 {% endblock %}
