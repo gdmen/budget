@@ -73,3 +73,6 @@ reports
 
 # Database
 db.sqlite3
+
+# Settings
+settings.py
