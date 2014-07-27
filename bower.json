@@ -13,5 +13,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "marionette": "latest",
+    "fastclick": "latest",
+    "foundation": "latest",
+    "font-awesome": "latest"
+  }
 }

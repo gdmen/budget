@@ -15,4 +15,6 @@ urlpatterns = patterns('',
     url(r'', include('django.contrib.auth.urls')),
     #url(r'^admin/', include('admin.site.urls')),
     url(r'^api/', include(api_router.urls)),
+    url(r'^m/', login_required(TemplateView.as_view(template_name='private.html')), name='private'),
+    url(r'^', TemplateView.as_view(template_name='public.html'), name='public'),
 )
