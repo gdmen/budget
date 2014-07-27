@@ -15,8 +15,3 @@ App.Views.TransactionList = Backbone.Marionette.CompositeView.extend({
   childView: App.Views.Transaction,
   childViewContainer: "tbody"
 });
-
-App.Views.ImportForm = Backbone.Marionette.ItemView.extend({
-  template: Handlebars.templates["import"],
-  id: "import"
-});

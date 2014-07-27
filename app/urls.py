@@ -14,7 +14,8 @@ api_router.register(TransactionResource())
 urlpatterns = patterns('',
     url(r'', include('django.contrib.auth.urls')),
     #url(r'^admin/', include('admin.site.urls')),
-    url(r'^api/', include(api_router.urls)),
-    url(r'^landing/', TemplateView.as_view(template_name='landing.html'), name='public'),
-    url(r'^', login_required(TemplateView.as_view(template_name='index.html')), name='private'),
+    url(r'^api/?', include(api_router.urls)),
+    url(r'^landing/?', TemplateView.as_view(template_name='landing.html'), name='landing'),
+    url(r'^import/?', login_required(TemplateView.as_view(template_name='import.html')), name='import'),
+    url(r'^', login_required(TemplateView.as_view(template_name='index.html')), name='index'),
 )

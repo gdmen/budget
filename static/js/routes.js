@@ -1,42 +1,31 @@
-App.Router = Backbone.Router.extend({
+App.Router = Backbone.Marionette.AppRouter.extend({
   routes: {
-    "(/)": "home",
-    "transactions(/)": "transactions",
-    "import(/)": "import",
-    "*unknown": "unknown"
+    "(/)": "routeHome",
+    "transactions(/)": "routeTransactions",
+    "*unknown": "routeUnknown"
+  },
+
+  routeHome: function () {
+    console.log("HOME");
+    App.regionContent.empty();
+  },
+
+  routeTransactions: function () {
+    console.log("TRANSACTIONS");
+    var test = new App.Models.TransactionList([
+      { amount: 1 }, { amount: 2 }, { amount: 5 }
+    ]);
+    test = new App.Models.TransactionList()
+    test.fetch();
+    var view = new App.Views.TransactionList({
+      collection: test
+    });
+    App.regionContent.show(view);
+  },
+
+  routeUnknown: function () {
+    console.log("UNKNOWN");
   }
 });
 
-App.router = new App.Router;
-App.router.on("route:home", routeHome);
-App.router.on("route:transactions", routeTransactions);
-App.router.on("route:import", routeImport);
-App.router.on("route:unknown", routeUnknown);
-
-function routeHome () {
-  console.log("HOME");
-  App.regionContent.empty();
-}
-
-function routeTransactions () {
-  console.log("TRANSACTIONS");
-  var test = new App.Models.TransactionList([
-    { amount: 1 }, { amount: 2 }, { amount: 5 }
-  ]);
-  test = new App.Models.TransactionList()
-  test.fetch();
-  var view = new App.Views.TransactionList({
-    collection: test
-  });
-  App.regionContent.show(view);
-}
-
-function routeImport () {
-  console.log("IMPORT");
-  var view = new App.Views.ImportForm();
-  App.regionContent.show(view);
-}
-
-function routeUnknown () {
-  console.log("UNKNOWN");
-}
+App.router = new App.Router();
