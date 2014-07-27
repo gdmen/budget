@@ -3,7 +3,7 @@ $(function () {
     { amount: 1 }, { amount: 2 }, { amount: 5 }
   ]);
   App.addInitializer(function (options) {
-    var transactionListView = new TransactionListView({
+    var transactionListView = new App.Views.TransactionListView({
       collection: test
     });
     App.regionContent.show(transactionListView);

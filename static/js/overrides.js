@@ -33,16 +33,7 @@ $.ajaxSetup({dataFilter: function(data, type) {
  * Tastypie Models avoid redirects for ending '/'s and have recursive toJSON()
  */
 
-App.Models.Tastypie = Backbone.Model.extend({
-  /*
-   * [gdm] Reverting changes to most recent save.
-   */
-  discardChanges: function() {
-    console.log(this.previousAttributes());
-    this.set(this.previousAttributes());
-    return this;
-  },
-
+App.Models.Base = Backbone.Model.extend({
   base_url: function() {
     var temp_url = Backbone.Model.prototype.url.call(this);
     return (temp_url.charAt(temp_url.length - 1) === "/" ? temp_url : temp_url+"/");
@@ -53,7 +44,7 @@ App.Models.Tastypie = Backbone.Model.extend({
   },
 });
 
-App.Models.TastypieCollection = Backbone.Collection.extend({
+App.Models.BaseCollection = Backbone.Collection.extend({
   parse: function(response) {
     this.recent_meta = response.meta || {};
     return response.objects || response;

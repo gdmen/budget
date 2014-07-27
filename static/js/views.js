@@ -3,14 +3,18 @@
  */
 Handlebars.partials = Handlebars.templates;
 
-TransactionView = Backbone.Marionette.ItemView.extend({
+App.Views.TransactionView = Backbone.Marionette.ItemView.extend({
   template: Handlebars.templates["transaction"],
   tagName: "tr",
   className: "transaction"
 });
-TransactionListView = Backbone.Marionette.CompositeView.extend({
+App.Views.TransactionListView = Backbone.Marionette.CompositeView.extend({
   template: Handlebars.templates["transactions"],
   tagName: "table",
   id: "transaction_list",
-  childView: TransactionView,
+  childView: App.Views.TransactionView,
+  childViewContainer: "tbody"
+});
+
+App.Views.UploadView = Backbone.Marionette.View.extend({
 });
