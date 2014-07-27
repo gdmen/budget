@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="csrf-token" content="{{csrf_token}}" onload="setCSRF()">
+  <title>{% block title %}JudoJournal{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  <script type="text/javascript" src="{% static 'bower/modernizr/modernizr.js' %}"></script>
+  {% block head %}
+  {% endblock %}
+</head>
+<body>
+  <div id="non-footer">
+    <div id="page-container">
+			<div class="contain-to-grid">
+				<nav class="top-bar">
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="{% url 'public' %}">JudoJournal</a></h1>
+						</li>
+						<li class="toggle-topbar"><a><i class="fa fa-bars fa-2x"></i></a></li>
+					</ul>
+
+					<section class="top-bar-section">
+						<!-- Right Nav Section -->
+						<ul class="right">
+							{% block main_menu_right %}
+								{% if user.is_authenticated %}
+									<li><a href="/profile"><i class="fa fa-user"></i> {{ user.username }}</a></li>
+									<li><a href="/m/#/settings"><i class="fa fa-cog"></i> Settings</a></li>
+									<li><a href="{% url 'django.contrib.auth.views.logout' %}?next=/"><i class="fa fa-sign-out"></i> Sign out</a></li>
+								{% else %}
+									<li><a href="{% url 'django.contrib.auth.views.login' %}"><i class="fa fa-sign-in"></i> Sign in</a></li>
+								{% endif %}
+							{% endblock %}
+						</ul>
+						<!-- Left Nav Section -->
+						<ul class="left">
+							{% block main_menu_left %}
+							{% endblock %}
+						</ul>
+					</section>
+				</nav>
+			</div>
+
+      <div id="content">
+      {% block content %}{% endblock %}
+      </div>
+    </div><!--/page-container -->
+  </div><!--/non-footer -->
+  
+  <footer>
+    <div class="row">
+      <div class="small-12 columns">
+        {% block footer %}
+        {% endblock %}
+      </div>
+    </div>
+  </footer>
+  
+  <script type="text/javascript" src="{% static 'bower/jquery/jquery.min.js' %}"></script>
+    <script type="text/javascript">
+      var djangoUser = false;
+      {% if user.is_authenticated %}
+        djangoUser = {
+          username: "{{ user.username }}",
+        };
+      {% endif %}
+    </script>
+  <script type="text/javascript" src="{% static 'bower/fastclick/lib/fastclick.js' %}"></script>
+  <script type="text/javascript">
+    $(function() {
+			// Foundation menu
+			$(".toggle-topbar").click(function() {
+				$(".top-bar").toggleClass("expanded");
+			});
+			// fastclick
+      FastClick.attach(document.body);
+    });
+  </script>
+  {% block js %}
+  {% endblock %}
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-48083877-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</body>
+</html>

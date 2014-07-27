@@ -13,6 +13,6 @@ api_router.register(TransactionResource())
 
 urlpatterns = patterns('',
     url(r'', include('django.contrib.auth.urls')),
-    url(r'^admin/', include('admin.site.urls')),
+    #url(r'^admin/', include('admin.site.urls')),
     url(r'^api/', include(api_router.urls)),
 )

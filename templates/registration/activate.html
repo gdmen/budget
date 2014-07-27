@@ -1,0 +1,17 @@
+{% extends "single_page_form.html" %}
+
+{% block form%}
+
+{% if account %}
+
+<p>Account successfully activated</p>
+
+<p><a href="{% url 'django.contrib.auth.views.login' %}">Log in</a></p>
+
+{% else %}
+
+<p>Account activation failed</p>
+
+{% endif %}
+
+{% endblock %}
