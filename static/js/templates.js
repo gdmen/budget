@@ -21,4 +21,12 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
   return "<thead>\n  <tr class='header'>\n    <th>amt</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n";
   });
+templates['upload'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<input type=\"file\" id=\"file\" name=\"myfiles[]\" multiple />\n";
+  });
 })();

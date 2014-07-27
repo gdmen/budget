@@ -17,4 +17,5 @@ App.Views.TransactionListView = Backbone.Marionette.CompositeView.extend({
 });
 
 App.Views.UploadView = Backbone.Marionette.View.extend({
+  template: Handlebars.templates["upload"]
 });
