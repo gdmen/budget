@@ -1,1 +1,1 @@
-handlebars templates/handlebars -f static/js/backbone/templates.js
+handlebars templates/handlebars -f static/js/templates.js
