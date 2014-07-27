@@ -10,10 +10,10 @@ class Transaction(models.Model):
   amount = models.DecimalField(max_digits=10, decimal_places=2)
   memo = models.TextField(blank=True)
   # Standard Industry Code
-  sic = models.PositiveSmallIntegerField(blank=True)
+  sic = models.PositiveSmallIntegerField(blank=True, null=True)
   # Merchant Category Code
-  mcc = models.PositiveSmallIntegerField(blank=True)
-  checknum = models.PositiveSmallIntegerField(blank=True)
+  mcc = models.PositiveSmallIntegerField(blank=True, null=True)
+  checknum = models.PositiveSmallIntegerField(blank=True, null=True)
 
   class Meta:
     unique_together = (('user', 'fitid'),)
