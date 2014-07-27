@@ -1,4 +1,5 @@
 var App = new Backbone.Marionette.Application();
+
 options = {}
 
 App.on('start', function (options) {
