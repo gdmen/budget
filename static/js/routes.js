@@ -23,6 +23,8 @@ function routeTransactions () {
   var test = new App.Models.TransactionList([
     { amount: 1 }, { amount: 2 }, { amount: 5 }
   ]);
+  test = new App.Models.TransactionList()
+  test.fetch();
   var view = new App.Views.TransactionList({
     collection: test
   });
