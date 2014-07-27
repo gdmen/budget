@@ -1,0 +1,27 @@
+{% extends "single_page_form.html" %}
+
+{% block header %}
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="{% url 'index' %}">JudoJournal</a></h1>
+        </li>
+      </ul>
+    </nav>
+  </div>
+{% endblock %}
+
+{% block form %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <p>{{ form.non_field_errors }}</p>
+  <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+  <p>
+    {{ form.docfile.errors }}
+    {{ form.docfile }}
+  </p>
+  <p><button type="submit" class="expand">Import</button></p>
+</form>
+{% endblock %}

@@ -2,7 +2,7 @@ from tastypie.authentication import SessionAuthentication
 from tastypie.authorization import DjangoAuthorization
 from tastypie.resources import ModelResource
 from tastypie import fields
-from models import *
+from .models import *
 
 
 class UserResource(ModelResource):
