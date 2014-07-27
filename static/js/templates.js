@@ -19,6 +19,6 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<thead>\n  <tr class='header'>\n    <th>Name</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n";
+  return "<thead>\n  <tr class='header'>\n    <th>amt</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n";
   });
 })();

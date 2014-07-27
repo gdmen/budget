@@ -5,20 +5,12 @@ Handlebars.partials = Handlebars.templates;
 
 TransactionView = Backbone.Marionette.ItemView.extend({
   template: Handlebars.templates["transaction"],
-  tagName: "tr"
+  tagName: "tr",
+  className: "transaction"
 });
-TransactionsView = Backbone.Marionette.CompositeView.extend({
+TransactionListView = Backbone.Marionette.CompositeView.extend({
   template: Handlebars.templates["transactions"],
-  itemView: TransactionView,
   tagName: "table",
-
-  appendHtml: function (collectionView, itemView) {
-    collectionView.$("tbody").append(itemView.el);
-  }
-});
-App.addInitializer(function (options) {
-  var transactionsView = new TransactionsView({
-    collection: options.test
-  });
-  App.regionContent.show(transactionsView);
+  id: "transaction_list",
+  childView: TransactionView,
 });
