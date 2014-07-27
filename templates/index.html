@@ -1,11 +1,22 @@
-{% extends "backbone_base.html" %}
+{% extends "base.html" %}
 {% load staticfiles %}
 
-{% block js_ %}
-{% comment %}
+{% block head %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript" src="{% static 'bower/underscore/underscore.js' %}"></script>
+  <script type="text/javascript" src="{% static 'bower/backbone/backbone.js' %}"></script>
+  <script type="text/javascript" src="{% static 'bower/marionette/lib/backbone.marionette.js' %}"></script>
+  <script type="text/javascript" src="{% static 'libs/handlebars.runtime.js' %}"></script>
+  <script type="text/javascript" src="{% static 'libs/html-sanitizer-minified.js' %}"></script>
+	
+  <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/models.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/templates.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/views.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/routes.js' %}"></script>
-{% endcomment %}
-  <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
 {% endblock %}
