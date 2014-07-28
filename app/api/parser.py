@@ -3,24 +3,39 @@ import pytz
 from ofxparse import OfxParser
 from .models import *
 
+
 def handle_uploaded_file(f, user):
   ofx = OfxParser.parse(f)
 
-  for account in ofx.accounts:
+  for ofxAccount in ofx.accounts:
+    # Create Institution
+    institution, _ = Institution.objects.get_or_create(
+      organization = ofxAccount.institution.organization,
+      fid = ofxAccount.institution.fid
+    )
     # Create Account
-    Account.objects.get_or_create(
+    account, _ = Account.objects.get_or_create(
+      user = user,
+      account_id = ofxAccount.account_id,
+      routing_number = ofxAccount.routing_number,
+      branch_id = ofxAccount.branch_id,
+      account_type = ofxAccount.account_type,
+      institution = institution,
+      type = ofxAccount.type
+    )
 
     # Create Transactions
-    for transaction in account.statement.transactions:
+    for ofxTransaction in ofxAccount.statement.transactions:
       Transaction.objects.get_or_create(
         user = user,
-        fitid = transaction.id,
-        payee = transaction.payee,
-        type = transaction.type,
-        date = transaction.date.replace(tzinfo=pytz.UTC),
-        amount = transaction.amount,
-        memo = transaction.memo,
-        sic = transaction.sic or None,
-        mcc = transaction.mcc or None,
-        checknum = transaction.checknum or None
+        account = account,
+        fitid = ofxTransaction.id,
+        payee = ofxTransaction.payee,
+        type = ofxTransaction.type,
+        date = ofxTransaction.date.replace(tzinfo=pytz.UTC),
+        amount = ofxTransaction.amount,
+        memo = ofxTransaction.memo,
+        sic = ofxTransaction.sic or None,
+        mcc = ofxTransaction.mcc or None,
+        checknum = ofxTransaction.checknum or None
       )

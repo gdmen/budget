@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Institution(models.Model):
   organization = models.TextField()
   fid = models.TextField(unique=True)
+
 
 class Account(models.Model):
   user = models.ForeignKey(User)
@@ -17,6 +19,7 @@ class Account(models.Model):
   )
   class Meta:
     unique_together = (('user', 'institution', 'account_id'))
+
 
 class Transaction(models.Model):
   user = models.ForeignKey(User)

@@ -4,6 +4,7 @@ from .forms import UploadFileForm
 
 from .parser import handle_uploaded_file
 
+
 def ImportFile(request):
   if request.method == 'POST':
     form = UploadFileForm(request.POST, request.FILES)

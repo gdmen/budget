@@ -10,6 +10,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (helper = helpers.date) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.date); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
+    + "</td>\n<td>"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.account)),stack1 == null || stack1 === false ? stack1 : stack1.account_id)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "</td>\n<td>";
   if (helper = helpers.type) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.type); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
@@ -31,6 +33,6 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<thead>\n  <tr class='header'>\n    <th>Date</th>\n    <th>Type</th>\n    <th>Amount</th>\n    <th>Payee</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n";
+  return "<thead>\n  <tr class='header'>\n    <th>Date</th>\n    <th>Account</th>\n    <th>Type</th>\n    <th>Amount</th>\n    <th>Payee</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n";
   });
 })();
