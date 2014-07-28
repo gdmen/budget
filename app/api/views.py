@@ -10,7 +10,7 @@ def ImportFile(request):
     form = UploadFileForm(request.POST, request.FILES)
     if form.is_valid():
       handle_uploaded_file(request.FILES['file'], request.user)
-      return HttpResponseRedirect('/success/url/')
+      return HttpResponseRedirect('/import/')
   else:
     form = UploadFileForm()
   return render(request, 'import.html', dictionary={'form': form})

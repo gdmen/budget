@@ -9,7 +9,8 @@ def handle_uploaded_file(f, user):
 
   for ofxAccount in ofx.accounts:
     # Create Institution
-    institution, _ = Institution.objects.get_or_create(
+    print ofxAccount.institution.fid
+    institution = Institution.objects.get(
       fid = ofxAccount.institution.fid
     )
     # Create Account
