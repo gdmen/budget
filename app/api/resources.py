@@ -16,6 +16,7 @@ class UserResource(ModelResource):
 
 class AuthorizeUserResource(ModelResource):
   user = fields.ForeignKey(UserResource, 'user', full=True)
+
   class Meta:
     abstract = True
     always_return_data = True
@@ -27,6 +28,7 @@ class AuthorizeUserResource(ModelResource):
 
 
 class InstitutionResource(ModelResource):
+
   class Meta(AuthorizeUserResource.Meta):
     queryset = Institution.objects.all()
     resource_name = 'institution'
@@ -34,9 +36,11 @@ class InstitutionResource(ModelResource):
 
 class AccountResource(AuthorizeUserResource):
   institution = fields.ForeignKey(InstitutionResource, 'institution', full=True)
+
   class Meta(AuthorizeUserResource.Meta):
     queryset = Account.objects.all()
     resource_name = 'account'
+
   def obj_create(self, bundle, **kwargs):
     return super(AccountResource, self).obj_create(
         bundle, user=bundle.request.user)
@@ -44,9 +48,11 @@ class AccountResource(AuthorizeUserResource):
 
 class TransactionResource(AuthorizeUserResource):
   account = fields.ForeignKey(AccountResource, 'account', full=True)
+
   class Meta(AuthorizeUserResource.Meta):
     queryset = Transaction.objects.all().order_by('-date')
     resource_name = 'transaction'
+
   def obj_create(self, bundle, **kwargs):
     return super(TransactionResource, self).obj_create(
         bundle, user=bundle.request.user)
