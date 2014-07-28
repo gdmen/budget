@@ -26,6 +26,8 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# URL of the login page
+LOGIN_URL = '/login/'
 
 # Application definition
 
@@ -56,6 +58,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 TASTYPIE_DEFAULT_FORMATS = ['json']
 TASTYPIE_DATETIME_FORMATTING  = 'rfc-2822'
+API_LIMIT_PER_PAGE = 0
+TASTYPIE_FULL_DEBUG = True
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
