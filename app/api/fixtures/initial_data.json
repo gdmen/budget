@@ -1,3026 +1,2945 @@
 [
   {
     "fields": {
+      "organization": "121 Financial Credit Union",
       "name": "121 Financial Credit Union",
-      "fid": "666"
+      "fid": "000001155"
     },
     "model": "api.Institution",
     "pk": 0
   },
   {
     "fields": {
+      "organization": "1st Advantage FCU",
       "name": "1st Advantage FCU",
-      "fid": "542"
+      "fid": "251480563"
     },
     "model": "api.Institution",
     "pk": 1
   },
   {
     "fields": {
+      "organization": "5 Star Bank",
       "name": "5 Star Bank",
-      "fid": "774"
+      "fid": "307087713"
     },
     "model": "api.Institution",
     "pk": 2
   },
   {
     "fields": {
+      "organization": "SixySix",
       "name": "66 Federal Credit Union",
-      "fid": "553"
+      "fid": "289"
     },
     "model": "api.Institution",
     "pk": 3
   },
   {
     "fields": {
+      "organization": "A.G. Edwards",
       "name": "A. G. Edwards and Sons, Inc.",
-      "fid": "491"
+      "fid": "43-0895447"
     },
     "model": "api.Institution",
     "pk": 4
   },
   {
     "fields": {
+      "organization": "Abbott Laboratories ECU - ALEC",
       "name": "Abbott Laboratories Employee CU",
-      "fid": "667"
+      "fid": "35MXN"
     },
     "model": "api.Institution",
     "pk": 5
   },
   {
     "fields": {
+      "organization": "ABNB Federal Credit Union",
       "name": "ABNB Federal Credit Union",
-      "fid": "530"
+      "fid": "251481627"
     },
     "model": "api.Institution",
     "pk": 6
   },
   {
     "fields": {
+      "organization": "Achieva Credit Union",
       "name": "Achieva Credit Union",
-      "fid": "668"
+      "fid": "4491"
     },
     "model": "api.Institution",
     "pk": 7
   },
   {
     "fields": {
+      "organization": "hpcu",
       "name": "Addison Avenue Federal Credit Union",
-      "fid": "550"
+      "fid": "11288"
     },
     "model": "api.Institution",
     "pk": 8
   },
   {
     "fields": {
+      "organization": "DI",
       "name": "Advantis Credit Union",
-      "fid": "782"
+      "fid": "323075097"
     },
     "model": "api.Institution",
     "pk": 9
   },
   {
     "fields": {
+      "organization": "Affinity Plus FCU",
       "name": "Affinity Plus Federal Credit Union",
-      "fid": "732"
+      "fid": "75"
     },
     "model": "api.Institution",
     "pk": 10
   },
   {
     "fields": {
-      "name": "AIM Investments",
-      "fid": "497"
+      "organization": "BofA",
+      "name": "Alaska Air Visa (Bank of America)",
+      "fid": "1142"
     },
     "model": "api.Institution",
     "pk": 11
   },
   {
     "fields": {
-      "name": "Alaska Air Visa (Bank of America)",
-      "fid": "796"
+      "organization": "Federal Employees CU",
+      "name": "Allegiance Credit Union",
+      "fid": "303085230"
     },
     "model": "api.Institution",
     "pk": 12
   },
   {
     "fields": {
-      "name": "Allegiance Credit Union",
-      "fid": "531"
+      "organization": "JackHenry",
+      "name": "Alpine Banks of Colorado",
+      "fid": "1451"
     },
     "model": "api.Institution",
     "pk": 13
   },
   {
     "fields": {
-      "name": "Alpine Banks of Colorado",
-      "fid": "643"
+      "organization": "AltaOneFCU",
+      "name": "AltaOne",
+      "fid": "322274462"
     },
     "model": "api.Institution",
     "pk": 14
   },
   {
     "fields": {
-      "name": "AltaOne",
-      "fid": "772"
+      "organization": "292-3",
+      "name": "AmegyBank",
+      "fid": "1165"
     },
     "model": "api.Institution",
     "pk": 15
   },
   {
     "fields": {
-      "name": "AltaOne Federal Credit Union",
-      "fid": "490"
+      "organization": "America First Credit Union",
+      "name": "America First Credit Union",
+      "fid": "54324"
     },
     "model": "api.Institution",
     "pk": 16
   },
   {
     "fields": {
-      "name": "AmegyBank",
-      "fid": "786"
+      "organization": "AMEX",
+      "name": "American Express Card",
+      "fid": "3101"
     },
     "model": "api.Institution",
     "pk": 17
   },
   {
     "fields": {
-      "name": "America First Credit Union",
-      "fid": "533"
+      "organization": "ISC",
+      "name": "American National Bank",
+      "fid": "4201"
     },
     "model": "api.Institution",
     "pk": 18
   },
   {
     "fields": {
-      "name": "American Century Investments",
-      "fid": "739"
+      "organization": "AMPF",
+      "name": "Ameriprise Financial Services, Inc.",
+      "fid": "3102"
     },
     "model": "api.Institution",
     "pk": 19
   },
   {
     "fields": {
-      "name": "American Express Card",
-      "fid": "424"
+      "organization": "Harland Financial Solutions",
+      "name": "Amplify Federal Credit Union",
+      "fid": "1"
     },
     "model": "api.Institution",
     "pk": 20
   },
   {
     "fields": {
-      "name": "American Funds",
-      "fid": "590"
+      "organization": "FundsXpress",
+      "name": "Andrews Federal Credit Union",
+      "fid": "AFCUSMD"
     },
     "model": "api.Institution",
     "pk": 21
   },
   {
     "fields": {
-      "name": "American National Bank",
-      "fid": "669"
+      "organization": "APCO Employees Credit Union",
+      "name": "APCO EMPLOYEES CREDIT UNION",
+      "fid": "262087609"
     },
     "model": "api.Institution",
     "pk": 22
   },
   {
     "fields": {
-      "name": "Ameriprise Financial Services, Inc.",
-      "fid": "489"
+      "organization": "DI",
+      "name": "Apple FCU",
+      "fid": "256078514"
     },
     "model": "api.Institution",
     "pk": 23
   },
   {
     "fields": {
-      "name": "Amplify Federal Credit Union",
-      "fid": "788"
+      "organization": "DI",
+      "name": "Arizona Federal Credit Union",
+      "fid": "322172797"
     },
     "model": "api.Institution",
     "pk": 24
   },
   {
     "fields": {
-      "name": "Andrews Federal Credit Union",
-      "fid": "670"
+      "organization": "DI",
+      "name": "Arizona State Credit Union",
+      "fid": "322172496"
     },
     "model": "api.Institution",
     "pk": 25
   },
   {
     "fields": {
-      "name": "APCO EMPLOYEES CREDIT UNION",
-      "fid": "521"
+      "organization": "Alcoa Employees&Community CU",
+      "name": "Ascentra Credit Union",
+      "fid": "273973456"
     },
     "model": "api.Institution",
     "pk": 26
   },
   {
     "fields": {
-      "name": "Apple FCU",
-      "fid": "746"
+      "organization": "Citigroup",
+      "name": "AT&T Universal Card",
+      "fid": "24909"
     },
     "model": "api.Institution",
     "pk": 27
   },
   {
     "fields": {
-      "name": "Ariel Mutual Funds",
-      "fid": "566"
+      "organization": "AXA",
+      "name": "AXA Equitable",
+      "fid": "7199"
     },
     "model": "api.Institution",
     "pk": 28
   },
   {
     "fields": {
-      "name": "Arizona Federal Credit Union",
-      "fid": "637"
+      "organization": "B-M S Federal Credit Union",
+      "name": "B-M S Federal Credit Union",
+      "fid": "221277007"
     },
     "model": "api.Institution",
     "pk": 29
   },
   {
     "fields": {
-      "name": "Arizona State Credit Union",
-      "fid": "785"
+      "organization": "DI",
+      "name": "BancFirst",
+      "fid": "103003632"
     },
     "model": "api.Institution",
     "pk": 30
   },
   {
     "fields": {
-      "name": "Ascentra Credit Union",
-      "fid": "423"
+      "organization": "HAN",
+      "name": "Bank of America",
+      "fid": "6805"
     },
     "model": "api.Institution",
     "pk": 31
   },
   {
     "fields": {
-      "name": "AT&T Universal Card",
-      "fid": "427"
+      "organization": "HAN",
+      "name": "Bank of America (All except CA, WA,&ID)",
+      "fid": "6812"
     },
     "model": "api.Institution",
     "pk": 32
   },
   {
     "fields": {
-      "name": "AXA Equitable",
-      "fid": "763"
+      "organization": "ISC",
+      "name": "Bank of America (Formerly Fleet)",
+      "fid": "1803"
     },
     "model": "api.Institution",
     "pk": 33
   },
   {
     "fields": {
-      "name": "B-M S Federal Credit Union",
-      "fid": "505"
+      "organization": "HAN",
+      "name": "Bank of America (New York)",
+      "fid": "5959"
     },
     "model": "api.Institution",
     "pk": 34
   },
   {
     "fields": {
-      "name": "BancFirst",
-      "fid": "644"
+      "organization": "122402366",
+      "name": "Bank of George",
+      "fid": "122402366"
     },
     "model": "api.Institution",
     "pk": 35
   },
   {
     "fields": {
-      "name": "Bank of America",
-      "fid": "639"
+      "organization": "Bank of Internet",
+      "name": "Bank of Internet, USA",
+      "fid": "122287251"
     },
     "model": "api.Institution",
     "pk": 36
   },
   {
     "fields": {
-      "name": "Bank of America (All except CA, WA,&ID)",
-      "fid": "472"
+      "organization": "BOS",
+      "name": "Bank of Stockton",
+      "fid": "3901"
     },
     "model": "api.Institution",
     "pk": 37
   },
   {
     "fields": {
-      "name": "Bank of America (California)",
-      "fid": "635"
+      "organization": "BOT",
+      "name": "Bank of Tampa, The",
+      "fid": "063108680"
     },
     "model": "api.Institution",
     "pk": 38
   },
   {
     "fields": {
-      "name": "Bank of America (Formerly Fleet)",
-      "fid": "674"
+      "organization": "JackHenry",
+      "name": "Bank of the Cascades",
+      "fid": "4751"
     },
     "model": "api.Institution",
     "pk": 39
   },
   {
     "fields": {
-      "name": "Bank of America - 5959",
-      "fid": "765"
+      "organization": "BancWest Corp",
+      "name": "Bank of the West",
+      "fid": "5809"
     },
     "model": "api.Institution",
     "pk": 40
   },
   {
     "fields": {
-      "name": "Bank of America - access.ofx",
-      "fid": "790"
+      "organization": "B1",
+      "name": "Bank One",
+      "fid": "5811"
     },
     "model": "api.Institution",
     "pk": 41
   },
   {
     "fields": {
-      "name": "Bank Of America(All except CA,WA,&ID)",
-      "fid": "661"
+      "organization": "ISC",
+      "name": "Bank One (Chicago)",
+      "fid": "1501"
     },
     "model": "api.Institution",
     "pk": 42
   },
   {
     "fields": {
-      "name": "Bank of George",
-      "fid": "733"
+      "organization": "ISC",
+      "name": "Bank One (Michigan and Florida)",
+      "fid": "6001"
     },
     "model": "api.Institution",
     "pk": 43
   },
   {
     "fields": {
-      "name": "Bank of Internet, USA",
-      "fid": "787"
+      "organization": "Bank Fund Staff FCU",
+      "name": "Bank-Fund Staff FCU",
+      "fid": "2"
     },
     "model": "api.Institution",
     "pk": 44
   },
   {
     "fields": {
-      "name": "Bank of Stockton",
-      "fid": "429"
+      "organization": "ISC",
+      "name": "BankBoston PC Banking",
+      "fid": "1801"
     },
     "model": "api.Institution",
     "pk": 45
   },
   {
     "fields": {
-      "name": "Bank of Tampa, The",
-      "fid": "522"
+      "organization": "DI",
+      "name": "bankfinancial",
+      "fid": "271972899"
     },
     "model": "api.Institution",
     "pk": 46
   },
   {
     "fields": {
-      "name": "Bank of the Cascades",
-      "fid": "430"
+      "organization": "Baton Rouge City Parish EFCU",
+      "name": "Baton Rouge City Parish Emp FCU",
+      "fid": "265473333"
     },
     "model": "api.Institution",
     "pk": 47
   },
   {
     "fields": {
-      "name": "Bank of the West",
-      "fid": "656"
+      "organization": "DI",
+      "name": "Belmont Savings Bank",
+      "fid": "211371764"
     },
     "model": "api.Institution",
     "pk": 48
   },
   {
     "fields": {
-      "name": "Bank One",
-      "fid": "428"
+      "organization": "orcc",
+      "name": "Beverly Co-Operative Bank",
+      "fid": "531"
     },
     "model": "api.Institution",
     "pk": 49
   },
   {
     "fields": {
-      "name": "Bank One (Chicago)",
-      "fid": "672"
+      "organization": "Billings Federal Credit Union",
+      "name": "Billings Federal Credit Union",
+      "fid": "6217"
     },
     "model": "api.Institution",
     "pk": 50
   },
   {
     "fields": {
-      "name": "Bank One (Michigan and Florida)",
-      "fid": "673"
+      "organization": "becu",
+      "name": "Boeing Employees Credit Union",
+      "fid": "1001"
     },
     "model": "api.Institution",
     "pk": 51
   },
   {
     "fields": {
-      "name": "Bank-Fund Staff FCU",
-      "fid": "520"
+      "organization": "Bossier Federal Credit Union",
+      "name": "Bossier Federal Credit Union",
+      "fid": "311175129"
     },
     "model": "api.Institution",
     "pk": 52
   },
   {
     "fields": {
-      "name": "BankBoston PC Banking",
-      "fid": "675"
+      "organization": "401",
+      "name": "California Bank&Trust",
+      "fid": "5006"
     },
     "model": "api.Institution",
     "pk": 53
   },
   {
     "fields": {
-      "name": "bankfinancial",
-      "fid": "762"
+      "organization": "orcc",
+      "name": "Cambridge Portuguese Credit Union",
+      "fid": "983"
     },
     "model": "api.Institution",
     "pk": 54
   },
   {
     "fields": {
-      "name": "Baton Rouge City Parish Emp FCU",
-      "fid": "576"
+      "organization": "DI",
+      "name": "Cambridge Savings Bank",
+      "fid": "211371120"
     },
     "model": "api.Institution",
     "pk": 55
   },
   {
     "fields": {
-      "name": "BB&T",
-      "fid": "475"
+      "organization": "Camino FCU",
+      "name": "Camino FCU",
+      "fid": "322279975"
     },
     "model": "api.Institution",
     "pk": 56
   },
   {
     "fields": {
-      "name": "Belmont Savings Bank",
-      "fid": "775"
+      "organization": "Campus USA Credit Union",
+      "name": "Campus USA Credit Union",
+      "fid": "263178478"
     },
     "model": "api.Institution",
     "pk": 57
   },
   {
     "fields": {
-      "name": "Bernstein Global Wealth Mgmt",
-      "fid": "605"
+      "organization": "ING DIRECT",
+      "name": "Capital One 360",
+      "fid": "031176110"
     },
     "model": "api.Institution",
     "pk": 58
   },
   {
     "fields": {
-      "name": "Beverly Co-Operative Bank",
-      "fid": "676"
+      "organization": "Cedar Point Federal Credit Union",
+      "name": "Cedar Point Federal Credit Union",
+      "fid": "255077736"
     },
     "model": "api.Institution",
     "pk": 59
   },
   {
     "fields": {
-      "name": "Billings Federal Credit Union",
-      "fid": "603"
+      "organization": "ORCC",
+      "name": "CenterState Bank",
+      "fid": "1942"
     },
     "model": "api.Institution",
     "pk": 60
   },
   {
     "fields": {
-      "name": "Boeing Employees Credit Union",
-      "fid": "647"
+      "organization": "Centra CU",
+      "name": "Centra Credit Union",
+      "fid": "274972883"
     },
     "model": "api.Institution",
     "pk": 61
   },
   {
     "fields": {
-      "name": "Bofi federal bank",
-      "fid": "798"
+      "organization": "CentralFloridaEduc",
+      "name": "Central Florida Educators FCU",
+      "fid": "590678236"
     },
     "model": "api.Institution",
     "pk": 62
   },
   {
     "fields": {
-      "name": "Bossier Federal Credit Union",
-      "fid": "611"
+      "organization": "Central Maine FCU",
+      "name": "Central Maine FCU",
+      "fid": "211287926"
     },
     "model": "api.Institution",
     "pk": 63
   },
   {
     "fields": {
-      "name": "California Bank&Trust",
-      "fid": "487"
+      "organization": "Centura Bank",
+      "name": "Centura Bank",
+      "fid": "1901"
     },
     "model": "api.Institution",
     "pk": 64
   },
   {
     "fields": {
-      "name": "Cambridge Portuguese Credit Union",
-      "fid": "677"
+      "organization": "CenturyFederalCU",
+      "name": "Century Federal Credit Union",
+      "fid": "241075056"
     },
     "model": "api.Institution",
     "pk": 65
   },
   {
     "fields": {
-      "name": "Cambridge Savings Bank",
-      "fid": "760"
+      "organization": "ISC",
+      "name": "Charles Schwab Bank, N.A.",
+      "fid": "101"
     },
     "model": "api.Institution",
     "pk": 66
   },
   {
     "fields": {
-      "name": "Camino FCU",
-      "fid": "580"
+      "organization": "SchwabRPS",
+      "name": "Charles Schwab Retirement",
+      "fid": "1234"
     },
     "model": "api.Institution",
     "pk": 67
   },
   {
     "fields": {
-      "name": "Campus USA Credit Union",
-      "fid": "546"
+      "organization": "ISC",
+      "name": "Charles Schwab&Co., INC",
+      "fid": "5104"
     },
     "model": "api.Institution",
     "pk": 68
   },
   {
     "fields": {
-      "name": "Capital One",
-      "fid": "628"
+      "organization": "B1",
+      "name": "Chase (credit card) ",
+      "fid": "10898"
     },
     "model": "api.Institution",
     "pk": 69
   },
   {
     "fields": {
-      "name": "Capital One 360",
-      "fid": "783"
+      "organization": "DI",
+      "name": "Chemical Bank",
+      "fid": "072410013"
     },
     "model": "api.Institution",
     "pk": 70
   },
   {
     "fields": {
-      "name": "Capital One Bank",
-      "fid": "631"
+      "organization": "Chesterfield Employees FCU",
+      "name": "Chesterfield Federal Credit Union",
+      "fid": "251480327"
     },
     "model": "api.Institution",
     "pk": 71
   },
   {
     "fields": {
-      "name": "Capital One Bank - 2",
-      "fid": "648"
+      "organization": "Chicago Patrolmens CU",
+      "name": "Chicago Patrolmens FCU",
+      "fid": "271078146"
     },
     "model": "api.Institution",
     "pk": 72
   },
   {
     "fields": {
-      "name": "Capitol Federal Savings Bank",
-      "fid": "789"
+      "organization": "CitadelFCU",
+      "name": "Citadel FCU",
+      "fid": "citadel"
     },
     "model": "api.Institution",
     "pk": 73
   },
   {
     "fields": {
-      "name": "Cedar Point Federal Credit Union",
-      "fid": "523"
+      "organization": "Citigroup",
+      "name": "Citi Personal Wealth Management",
+      "fid": "060"
     },
     "model": "api.Institution",
     "pk": 74
   },
   {
     "fields": {
-      "name": "CenterState Bank",
-      "fid": "773"
+      "organization": "ISC",
+      "name": "Citibank",
+      "fid": "2101"
     },
     "model": "api.Institution",
     "pk": 75
   },
   {
     "fields": {
-      "name": "Centra Credit Union",
-      "fid": "431"
+      "organization": "CheckFree OFX",
+      "name": "Citizens Bank",
+      "fid": "4639"
     },
     "model": "api.Institution",
     "pk": 76
   },
   {
     "fields": {
-      "name": "Centra Credit Union2",
-      "fid": "662"
+      "organization": "CheckFree OFX",
+      "name": "Citizens Bank - Consumer",
+      "fid": "CTZBK"
     },
     "model": "api.Institution",
     "pk": 77
   },
   {
     "fields": {
-      "name": "Central Florida Educators FCU",
-      "fid": "486"
+      "organization": "DI",
+      "name": "Citizens National Bank",
+      "fid": "111903151"
     },
     "model": "api.Institution",
     "pk": 78
   },
   {
     "fields": {
-      "name": "Central Maine FCU",
-      "fid": "543"
+      "organization": "Clearview Federal Credit Union",
+      "name": "Clearview Federal Credit Union",
+      "fid": "243083237"
     },
     "model": "api.Institution",
     "pk": 79
   },
   {
     "fields": {
-      "name": "Centura Bank",
-      "fid": "432"
+      "organization": "CollegedaleCU",
+      "name": "Collegedale Credit Union",
+      "fid": "35GFA"
     },
     "model": "api.Institution",
     "pk": 80
   },
   {
     "fields": {
-      "name": "Century Federal Credit Union",
-      "fid": "529"
+      "organization": "Colonial Banc Group",
+      "name": "Colonial Bank",
+      "fid": "1046"
     },
     "model": "api.Institution",
     "pk": 81
   },
   {
     "fields": {
-      "name": "Charles Schwab Bank, N.A.",
-      "fid": "578"
+      "organization": "Columbia Credit Union",
+      "name": "Columbia Credit Union",
+      "fid": "323383349"
     },
     "model": "api.Institution",
     "pk": 82
   },
   {
     "fields": {
-      "name": "Charles Schwab Retirement",
-      "fid": "729"
+      "organization": "Comerica",
+      "name": "Comerica Bank",
+      "fid": "5601"
     },
     "model": "api.Institution",
     "pk": 83
   },
   {
     "fields": {
-      "name": "Charles Schwab Retirement Plan Services",
-      "fid": "730"
+      "organization": "Commerce Bank NA",
+      "name": "Commerce Bank, NA",
+      "fid": "4001"
     },
     "model": "api.Institution",
     "pk": 84
   },
   {
     "fields": {
-      "name": "Charles Schwab&Co., INC",
-      "fid": "433"
+      "organization": "CommercialFederalBank",
+      "name": "Commercial Federal Bank",
+      "fid": "4801"
     },
     "model": "api.Institution",
     "pk": 85
   },
   {
     "fields": {
-      "name": "Chase (credit card)",
-      "fid": "636"
+      "organization": "Community 1st Credit Union",
+      "name": "Community 1st Credit Union",
+      "fid": "325082017"
     },
     "model": "api.Institution",
     "pk": 86
   },
   {
     "fields": {
-      "name": "Chemical Bank",
-      "fid": "747"
+      "organization": "JackHenry",
+      "name": "Community Bank, N.A.",
+      "fid": "11517"
     },
     "model": "api.Institution",
     "pk": 87
   },
   {
     "fields": {
-      "name": "Chesterfield Federal Credit Union",
-      "fid": "545"
+      "organization": "Community First Credit Union",
+      "name": "Community First Credit Union",
+      "fid": "275982801"
     },
     "model": "api.Institution",
     "pk": 88
   },
   {
     "fields": {
-      "name": "Chicago Patrolmens FCU",
-      "fid": "517"
+      "organization": "CNB",
+      "name": "Community Resource Bank",
+      "fid": "091917160"
     },
     "model": "api.Institution",
     "pk": 89
   },
   {
     "fields": {
-      "name": "Citadel FCU",
-      "fid": "477"
+      "organization": "Comstar Federal Credit Union",
+      "name": "COMSTAR FCU",
+      "fid": "255074988"
     },
     "model": "api.Institution",
     "pk": 90
   },
   {
     "fields": {
-      "name": "Citi Credit Card",
-      "fid": "629"
+      "organization": "Consumers Credit Union",
+      "name": "Consumers Credit Union",
+      "fid": "12541"
     },
     "model": "api.Institution",
     "pk": 91
   },
   {
     "fields": {
-      "name": "Citi Personal Wealth Management",
-      "fid": "671"
+      "organization": "Continenetal FCU",
+      "name": "Continental Federal Credit Union",
+      "fid": "322077559"
     },
     "model": "api.Institution",
     "pk": 92
   },
   {
     "fields": {
-      "name": "Citibank",
-      "fid": "678"
+      "organization": "USERS, Inc.",
+      "name": "CPM Federal Credit Union",
+      "fid": "253279536"
     },
     "model": "api.Institution",
     "pk": 93
   },
   {
     "fields": {
-      "name": "Citizens Bank",
-      "fid": "664"
+      "organization": "Credit Suisse Securities USA LLC",
+      "name": "Credit Suisse Securities USA LLC",
+      "fid": "001"
     },
     "model": "api.Institution",
     "pk": 94
   },
   {
     "fields": {
-      "name": "Citizens Bank - Business",
-      "fid": "528"
+      "organization": "Credit Union 1",
+      "name": "Credit Union 1 - IL",
+      "fid": "271188081"
     },
     "model": "api.Institution",
     "pk": 95
   },
   {
     "fields": {
-      "name": "Citizens Bank - Consumer",
-      "fid": "527"
+      "organization": "Credit Union ONE",
+      "name": "Credit Union ONE",
+      "fid": "14412"
     },
     "model": "api.Institution",
     "pk": 96
   },
   {
     "fields": {
-      "name": "Citizens National Bank",
-      "fid": "768"
+      "organization": "DATCU",
+      "name": "DATCU",
+      "fid": "311980725"
     },
     "model": "api.Institution",
     "pk": 97
   },
   {
     "fields": {
-      "name": "Clearview Federal Credit Union",
-      "fid": "478"
+      "organization": "Day Air Credit Union",
+      "name": "Day Air Credit Union",
+      "fid": "242277808"
     },
     "model": "api.Institution",
     "pk": 98
   },
   {
     "fields": {
-      "name": "Collegedale Credit Union",
-      "fid": "496"
+      "organization": "decu.org",
+      "name": "Delta Community Credit Union",
+      "fid": "3328"
     },
     "model": "api.Institution",
     "pk": 99
   },
   {
     "fields": {
-      "name": "Colonial Bank",
-      "fid": "436"
+      "organization": "Denver Community FCU",
+      "name": "Denver Community Federal Credit Union",
+      "fid": "10524"
     },
     "model": "api.Institution",
     "pk": 100
   },
   {
     "fields": {
-      "name": "Columbia Credit Union",
-      "fid": "541"
+      "organization": "Discover Bank",
+      "name": "Discover Bank",
+      "fid": "12610"
     },
     "model": "api.Institution",
     "pk": 101
   },
   {
     "fields": {
-      "name": "Comerica Bank",
-      "fid": "437"
+      "organization": "Discover Financial Services",
+      "name": "Discover Card",
+      "fid": "7101"
     },
     "model": "api.Institution",
     "pk": 102
   },
   {
     "fields": {
-      "name": "Commerce Bank",
-      "fid": "640"
+      "organization": "Discover Financial Services",
+      "name": "Discover Platinum",
+      "fid": "7102"
     },
     "model": "api.Institution",
     "pk": 103
   },
   {
     "fields": {
-      "name": "Commerce Bank NJ, PA, NY&DE",
-      "fid": "438"
+      "organization": "Dominion Credit Union",
+      "name": "Dominion Credit Union",
+      "fid": "251082644"
     },
     "model": "api.Institution",
     "pk": 104
   },
   {
     "fields": {
-      "name": "Commerce Bank, NA",
-      "fid": "439"
+      "organization": "DuPont Community Credit Union",
+      "name": "DuPont Community Credit Union",
+      "fid": "251483311"
     },
     "model": "api.Institution",
     "pk": 105
   },
   {
     "fields": {
-      "name": "Commercial Federal Bank",
-      "fid": "440"
+      "organization": "fldProv_mId",
+      "name": "E*TRADE",
+      "fid": "fldProv_mProvBankId"
     },
     "model": "api.Institution",
     "pk": 106
   },
   {
     "fields": {
-      "name": "Community 1st Credit Union",
-      "fid": "738"
+      "organization": "ISC",
+      "name": "EAB",
+      "fid": "6505"
     },
     "model": "api.Institution",
     "pk": 107
   },
   {
     "fields": {
-      "name": "Community Bank, N.A.",
-      "fid": "679"
+      "organization": "Eastern Bank",
+      "name": "Eastern Bank",
+      "fid": "6201"
     },
     "model": "api.Institution",
     "pk": 108
   },
   {
     "fields": {
-      "name": "Community First Credit Union",
-      "fid": "592"
+      "organization": "EDS CU",
+      "name": "EDS Credit Union",
+      "fid": "311079474"
     },
     "model": "api.Institution",
     "pk": 109
   },
   {
     "fields": {
-      "name": "Community Resource Bank",
-      "fid": "600"
+      "organization": "Educational Employees C U",
+      "name": "Educational Employees CU Fresno",
+      "fid": "321172594"
     },
     "model": "api.Institution",
     "pk": 110
   },
   {
     "fields": {
-      "name": "COMSTAR FCU",
-      "fid": "441"
+      "organization": "Edward Jones",
+      "name": "Edward Jones",
+      "fid": "823"
     },
     "model": "api.Institution",
     "pk": 111
   },
   {
     "fields": {
-      "name": "Consumers Credit Union",
-      "fid": "680"
+      "organization": "uofcfcu",
+      "name": "Elevations Credit Union IB WC-DC",
+      "fid": "307074580"
     },
     "model": "api.Institution",
     "pk": 112
   },
   {
     "fields": {
-      "name": "Continental Federal Credit Union",
-      "fid": "555"
+      "organization": "Envision Credit Union",
+      "name": "Envision Credit Union",
+      "fid": "263182558"
     },
     "model": "api.Institution",
     "pk": 113
   },
   {
     "fields": {
-      "name": "CPM Federal Credit Union",
-      "fid": "681"
+      "organization": "FAA Credit Union",
+      "name": "FAA Credit Union",
+      "fid": "114"
     },
     "model": "api.Institution",
     "pk": 114
   },
   {
     "fields": {
-      "name": "Credit Suisse Securities USA LLC",
-      "fid": "753"
+      "organization": "FAA Technical Center FCU",
+      "name": "FAA Technical Center FCU",
+      "fid": "231277440"
     },
     "model": "api.Institution",
     "pk": 115
   },
   {
     "fields": {
-      "name": "Credit Union 1 - IL",
-      "fid": "610"
+      "organization": "OSI 2",
+      "name": "Fairwinds Credit Union",
+      "fid": "4842"
     },
     "model": "api.Institution",
     "pk": 116
   },
   {
     "fields": {
-      "name": "Credit Union ONE",
-      "fid": "618"
+      "organization": "Fall River Municipal CU",
+      "name": "Fall River Municipal CU",
+      "fid": "211382591"
     },
     "model": "api.Institution",
     "pk": 117
   },
   {
     "fields": {
-      "name": "Cyprus Federal Credit Union",
-      "fid": "569"
+      "organization": "FEDCHOICE",
+      "name": "FedChoice FCU",
+      "fid": "254074785"
     },
     "model": "api.Institution",
     "pk": 118
   },
   {
     "fields": {
-      "name": "DATCU",
-      "fid": "682"
+      "organization": "fidelity.com",
+      "name": "Fidelity Investments",
+      "fid": "7776"
     },
     "model": "api.Institution",
     "pk": 119
   },
   {
     "fields": {
-      "name": "Day Air Credit Union",
-      "fid": "585"
+      "organization": "nbofx.fidelity.com",
+      "name": "Fidelity NetBenefits",
+      "fid": "8288"
     },
     "model": "api.Institution",
     "pk": 120
   },
   {
     "fields": {
-      "name": "Delta Community Credit Union",
-      "fid": "573"
+      "organization": "Fifth Third Bank",
+      "name": "Fifth Third Bancorp",
+      "fid": "5829"
     },
     "model": "api.Institution",
     "pk": 121
   },
   {
     "fields": {
-      "name": "Denali Alaskan FCU",
-      "fid": "443"
+      "organization": "Finance Center FCU",
+      "name": "Finance Center FCU (IN)",
+      "fid": "274073876"
     },
     "model": "api.Institution",
     "pk": 122
   },
   {
     "fields": {
-      "name": "Denver Community Federal Credit Union",
-      "fid": "683"
+      "organization": "Fincancial Center Credit Union",
+      "name": "Financial Center CU",
+      "fid": "321177803"
     },
     "model": "api.Institution",
     "pk": 123
   },
   {
     "fields": {
-      "name": "Desert Schools Federal Credit Union",
-      "fid": "645"
+      "organization": "First Alliance Credit Union",
+      "name": "First Alliance Credit Union",
+      "fid": "291975481"
     },
     "model": "api.Institution",
     "pk": 124
   },
   {
     "fields": {
-      "name": "Discover Bank",
-      "fid": "726"
+      "organization": "First Citizens",
+      "name": "First Citizens",
+      "fid": "1849"
     },
     "model": "api.Institution",
     "pk": 125
   },
   {
     "fields": {
-      "name": "Discover Card",
-      "fid": "444"
+      "organization": "First Citizens Bank NC, VA, WV",
+      "name": "First Citizens Bank - NC, VA, WV",
+      "fid": "5013"
     },
     "model": "api.Institution",
     "pk": 126
   },
   {
     "fields": {
-      "name": "Discover Platinum",
-      "fid": "684"
+      "organization": "First Clearing, LLC",
+      "name": "First Clearing, LLC",
+      "fid": "10033"
     },
     "model": "api.Institution",
     "pk": 127
   },
   {
     "fields": {
-      "name": "Dodge&Cox Funds",
-      "fid": "621"
+      "organization": "First Command Bank",
+      "name": "First Command Bank",
+      "fid": "188"
     },
     "model": "api.Institution",
     "pk": 128
   },
   {
     "fields": {
-      "name": "Dominion Credit Union",
-      "fid": "561"
+      "organization": "FirstCommonwealthFCU",
+      "name": "First Commonwealth FCU",
+      "fid": "231379199"
     },
     "model": "api.Institution",
     "pk": 129
   },
   {
     "fields": {
-      "name": "Dreyfus",
-      "fid": "445"
+      "organization": "FirstCommunityFCU",
+      "name": "First Community FCU",
+      "fid": "272483633"
     },
     "model": "api.Institution",
     "pk": 130
   },
   {
     "fields": {
-      "name": "Dupaco Community Credit Union",
-      "fid": "519"
+      "organization": "First Llorida Credit Union",
+      "name": "First Florida Credit Union",
+      "fid": "263079014"
     },
     "model": "api.Institution",
     "pk": 131
   },
   {
     "fields": {
-      "name": "DuPont Community Credit Union",
-      "fid": "485"
+      "organization": "BancWest Corp",
+      "name": "First Hawaiian Bank",
+      "fid": "3501"
     },
     "model": "api.Institution",
     "pk": 132
   },
   {
     "fields": {
-      "name": "E*TRADE",
-      "fid": "446"
+      "organization": "DI",
+      "name": "First Internet Bank of Indiana",
+      "fid": "074014187"
     },
     "model": "api.Institution",
     "pk": 133
   },
   {
     "fields": {
-      "name": "EAB",
-      "fid": "685"
+      "organization": "FIB",
+      "name": "First Interstate Bank",
+      "fid": "092901683"
     },
     "model": "api.Institution",
     "pk": 134
   },
   {
     "fields": {
-      "name": "Eastern Bank",
-      "fid": "447"
+      "organization": "JackHenry",
+      "name": "First National Bank (Texas)",
+      "fid": "12840"
     },
     "model": "api.Institution",
     "pk": 135
   },
   {
     "fields": {
-      "name": "EDS Credit Union",
-      "fid": "448"
+      "organization": "81004601",
+      "name": "First National Bank of St. Louis",
+      "fid": "162"
     },
     "model": "api.Institution",
     "pk": 136
   },
   {
     "fields": {
-      "name": "Educational Employees CU Fresno",
-      "fid": "492"
+      "organization": "DI",
+      "name": "First Republic Bank",
+      "fid": "321081669"
     },
     "model": "api.Institution",
     "pk": 137
   },
   {
     "fields": {
-      "name": "Edward Jones",
-      "fid": "608"
+      "organization": "AFS",
+      "name": "First Southwest Company",
+      "fid": "7048"
     },
     "model": "api.Institution",
     "pk": 138
   },
   {
     "fields": {
-      "name": "Elevations Credit Union",
-      "fid": "727"
+      "organization": "First Tech Credit Union",
+      "name": "First Tech Credit Union",
+      "fid": "2243"
     },
     "model": "api.Institution",
     "pk": 139
   },
   {
     "fields": {
-      "name": "Elevations Credit Union IB WC-DC",
-      "fid": "752"
+      "organization": "First Tech Federal Credit Union",
+      "name": "First Tech Federal Credit Union",
+      "fid": "3169"
     },
     "model": "api.Institution",
     "pk": 140
   },
   {
     "fields": {
-      "name": "Envision Credit Union",
-      "fid": "540"
+      "organization": "Online Financial Services ",
+      "name": "First Tennessee",
+      "fid": "2250"
     },
     "model": "api.Institution",
     "pk": 141
   },
   {
     "fields": {
-      "name": "FAA Credit Union",
-      "fid": "686"
+      "organization": "Firstar",
+      "name": "Firstar",
+      "fid": "1255"
     },
     "model": "api.Institution",
     "pk": 142
   },
   {
     "fields": {
-      "name": "FAA Technical Center FCU",
-      "fid": "583"
+      "organization": "FBDC",
+      "name": "FirstBank of Colorado",
+      "fid": "FirstBank"
     },
     "model": "api.Institution",
     "pk": 143
   },
   {
     "fields": {
-      "name": "Fairwinds Credit Union",
-      "fid": "687"
+      "organization": "FivePoint Credit Union",
+      "name": "FivePoint Credit Union",
+      "fid": "313187571"
     },
     "model": "api.Institution",
     "pk": 144
   },
   {
     "fields": {
-      "name": "Fall River Municipal CU",
-      "fid": "559"
+      "organization": "DI",
+      "name": "Flagstar Bank",
+      "fid": "272471852"
     },
     "model": "api.Institution",
     "pk": 145
   },
   {
     "fields": {
-      "name": "FedChoice FCU",
-      "fid": "688"
+      "organization": "FloridaTelcoCU",
+      "name": "Florida Telco CU",
+      "fid": "FTCU"
     },
     "model": "api.Institution",
     "pk": 146
   },
   {
     "fields": {
-      "name": "Fidelity Investments",
-      "fid": "449"
+      "organization": "Fort Knox Federal Credit Union",
+      "name": "Fort Knox Federal Credit Union",
+      "fid": "283978425"
     },
     "model": "api.Institution",
     "pk": 147
   },
   {
     "fields": {
-      "name": "Fidelity NetBenefits",
-      "fid": "558"
+      "organization": "Fort Stewart FCU",
+      "name": "Fort Stewart GeorgiaFCU",
+      "fid": "261271364"
     },
     "model": "api.Institution",
     "pk": 148
   },
   {
     "fields": {
-      "name": "Fifth Third Bancorp",
-      "fid": "450"
+      "organization": "franklintempleton.com",
+      "name": "Franklin Templeton Investments",
+      "fid": "9444"
     },
     "model": "api.Institution",
     "pk": 149
   },
   {
     "fields": {
-      "name": "Finance Center FCU (IN)",
-      "fid": "535"
+      "organization": "Fremont Bank",
+      "name": "Fremont Bank",
+      "fid": "121107882"
     },
     "model": "api.Institution",
     "pk": 150
   },
   {
     "fields": {
-      "name": "Financial Center CU",
-      "fid": "548"
+      "organization": "Granite City Steel cu",
+      "name": "GCS Federal Credit Union",
+      "fid": "281076853"
     },
     "model": "api.Institution",
     "pk": 151
   },
   {
     "fields": {
-      "name": "First Alliance Credit Union",
-      "fid": "602"
+      "organization": "orcc",
+      "name": "Haverhill Bank",
+      "fid": "93"
     },
     "model": "api.Institution",
     "pk": 152
   },
   {
     "fields": {
-      "name": "First Citizens",
-      "fid": "690"
+      "organization": "Hawaii State FCU",
+      "name": "Hawaii State FCU",
+      "fid": "321379041"
     },
     "model": "api.Institution",
     "pk": 153
   },
   {
     "fields": {
-      "name": "First Citizens Bank - NC, VA, WV",
-      "fid": "480"
+      "organization": "Hawaiian Tel FCU",
+      "name": "Hawaiian Tel Federal Credit Union",
+      "fid": "321379070"
     },
     "model": "api.Institution",
     "pk": 154
   },
   {
     "fields": {
-      "name": "First Clearing, LLC",
-      "fid": "689"
+      "organization": "Hawthorne Credit Union",
+      "name": "Hawthorne Credit Union",
+      "fid": "271979193"
     },
     "model": "api.Institution",
     "pk": 155
   },
   {
     "fields": {
-      "name": "First Command Bank",
-      "fid": "766"
+      "organization": "hewitt.com",
+      "name": "Hewitt Associates LLC",
+      "fid": "242"
     },
     "model": "api.Institution",
     "pk": 156
   },
   {
     "fields": {
-      "name": "First Commonwealth FCU",
-      "fid": "488"
+      "organization": "HFS Federal Credit Union",
+      "name": "HFS Federal Credit Union",
+      "fid": "321378660"
     },
     "model": "api.Institution",
     "pk": 157
   },
   {
     "fields": {
-      "name": "First Community FCU",
-      "fid": "515"
+      "organization": "VOneTwentySevenG",
+      "name": "Home Federal Savings Bank(MN/IA)",
+      "fid": "291270050"
     },
     "model": "api.Institution",
     "pk": 158
   },
   {
     "fields": {
-      "name": "First Florida Credit Union",
-      "fid": "612"
+      "organization": "Hudson Valley FCU",
+      "name": "Hudson Valley FCU",
+      "fid": "10767"
     },
     "model": "api.Institution",
     "pk": 159
   },
   {
     "fields": {
-      "name": "First Hawaiian Bank",
-      "fid": "691"
+      "organization": "Cavion",
+      "name": "Hughes Federal Credit Union",
+      "fid": "1951"
     },
     "model": "api.Institution",
     "pk": 160
   },
   {
     "fields": {
-      "name": "First Internet Bank of Indiana",
-      "fid": "642"
+      "organization": "Huntington",
+      "name": "Huntington National Bank",
+      "fid": "3701"
     },
     "model": "api.Institution",
     "pk": 161
   },
   {
     "fields": {
-      "name": "First Interstate Bank",
-      "fid": "693"
+      "organization": "IBM Southeast EFCU",
+      "name": "IBM Southeast Employees Federal Credit Union",
+      "fid": "1779"
     },
     "model": "api.Institution",
     "pk": 162
   },
   {
     "fields": {
-      "name": "First National Bank (Texas)",
-      "fid": "655"
+      "organization": "Fidelity",
+      "name": "Iinvestor360",
+      "fid": "7784"
     },
     "model": "api.Institution",
     "pk": 163
   },
   {
     "fields": {
-      "name": "First National Bank of St. Louis",
-      "fid": "692"
+      "organization": "INGDirectCanada",
+      "name": "ING DIRECT (Canada)",
+      "fid": "061400152"
     },
     "model": "api.Institution",
     "pk": 164
   },
   {
     "fields": {
-      "name": "First Republic Bank",
-      "fid": "770"
+      "organization": "ing-usa.com",
+      "name": "ING Institutional Plan Services ",
+      "fid": "1289"
     },
     "model": "api.Institution",
     "pk": 165
   },
   {
     "fields": {
-      "name": "First Southwest Company",
-      "fid": "620"
+      "organization": "Insight Credit Union",
+      "name": "Insight CU",
+      "fid": "10764"
     },
     "model": "api.Institution",
     "pk": 166
   },
   {
     "fields": {
-      "name": "First Tech Credit Union",
-      "fid": "451"
+      "organization": "Atlantic States Bank",
+      "name": "IronStone Bank",
+      "fid": "5012"
     },
     "model": "api.Institution",
     "pk": 167
   },
   {
     "fields": {
-      "name": "First Tech Federal Credit Union",
-      "fid": "731"
+      "organization": "ISC",
+      "name": "J.P. Morgan",
+      "fid": "4701"
     },
     "model": "api.Institution",
     "pk": 168
   },
   {
     "fields": {
-      "name": "First Tennessee",
-      "fid": "795"
+      "organization": "GCS",
+      "name": "J.P. Morgan Clearing Corp.",
+      "fid": "7315"
     },
     "model": "api.Institution",
     "pk": 169
   },
   {
     "fields": {
-      "name": "Firstar",
-      "fid": "494"
+      "organization": "jpmorgan.com",
+      "name": "J.P. Morgan Private Banking",
+      "fid": "0417"
     },
     "model": "api.Institution",
     "pk": 170
   },
   {
     "fields": {
-      "name": "FirstBank of Colorado",
-      "fid": "554"
+      "organization": "AFS",
+      "name": "Janney Montgomery Scott LLC",
+      "fid": "11326"
     },
     "model": "api.Institution",
     "pk": 171
   },
   {
     "fields": {
-      "name": "FivePoint Credit Union",
-      "fid": "599"
+      "organization": "Chase Bank",
+      "name": "JPMorgan Chase Bank",
+      "fid": "1601"
     },
     "model": "api.Institution",
     "pk": 172
   },
   {
     "fields": {
-      "name": "Flagstar Bank",
-      "fid": "784"
+      "organization": "Chase Bank of Texas",
+      "name": "JPMorgan Chase Bank (Texas)",
+      "fid": "5301"
     },
     "model": "api.Institution",
     "pk": 173
   },
   {
     "fields": {
-      "name": "Florida Telco CU",
-      "fid": "484"
+      "organization": "JPMORGAN",
+      "name": "JPMorgan Retirement Plan Services",
+      "fid": "6313"
     },
     "model": "api.Institution",
     "pk": 174
   },
   {
     "fields": {
-      "name": "Fort Knox Federal Credit Union",
-      "fid": "536"
+      "organization": "JSC Federal Credit Union",
+      "name": "JSC Federal Credit Union",
+      "fid": "10491"
     },
     "model": "api.Institution",
     "pk": 175
   },
   {
     "fields": {
-      "name": "Fort Stewart GeorgiaFCU",
-      "fid": "506"
+      "organization": "Kennedy Space Center FCU",
+      "name": "Kennedy Space Center FCU",
+      "fid": "263179532"
     },
     "model": "api.Institution",
     "pk": 176
   },
   {
     "fields": {
-      "name": "Franklin Templeton Investments",
-      "fid": "734"
+      "organization": "KeyBank",
+      "name": "KeyBank",
+      "fid": "5901"
     },
     "model": "api.Institution",
     "pk": 177
   },
   {
     "fields": {
-      "name": "Fremont Bank",
-      "fid": "556"
+      "organization": "KINECTA",
+      "name": "Kinecta Federal Credit Union",
+      "fid": "322278073"
     },
     "model": "api.Institution",
     "pk": 178
   },
   {
     "fields": {
-      "name": "GCS Federal Credit Union",
-      "fid": "498"
+      "organization": "Kirtland Federal Credit Union",
+      "name": "Kirtland Federal Credit Union",
+      "fid": "307070050"
     },
     "model": "api.Institution",
     "pk": 179
   },
   {
     "fields": {
-      "name": "Goldman Sachs",
-      "fid": "694"
+      "organization": "Kitsap Community Federal Credit",
+      "name": "Kitsap Community Credit Union",
+      "fid": "325180223"
     },
     "model": "api.Institution",
     "pk": 180
   },
   {
     "fields": {
-      "name": "Haverhill Bank",
-      "fid": "757"
+      "organization": "Las Colinas Federal CU",
+      "name": "Las Colinas FCU",
+      "fid": "311080573"
     },
     "model": "api.Institution",
     "pk": 181
   },
   {
     "fields": {
-      "name": "Hawaii State FCU",
-      "fid": "588"
+      "organization": "LaSalleBankMidwest",
+      "name": "LaSalle Bank Midwest",
+      "fid": "1101"
     },
     "model": "api.Institution",
     "pk": 182
   },
   {
     "fields": {
-      "name": "Hawaiian Tel Federal Credit Union",
-      "fid": "549"
+      "organization": "LaSalle Bank NA",
+      "name": "LaSalle Bank NA",
+      "fid": "6501"
     },
     "model": "api.Institution",
     "pk": 183
   },
   {
     "fields": {
-      "name": "Hawthorne Credit Union",
-      "fid": "493"
+      "organization": "LANB",
+      "name": "Los Alamos National Bank",
+      "fid": "107001012"
     },
     "model": "api.Institution",
     "pk": 184
   },
   {
     "fields": {
-      "name": "Hewitt Associates LLC",
-      "fid": "572"
+      "organization": "ISC",
+      "name": "M & T Bank",
+      "fid": "2601"
     },
     "model": "api.Institution",
     "pk": 185
   },
   {
     "fields": {
-      "name": "HFS Federal Credit Union",
-      "fid": "562"
+      "organization": "JackHenry",
+      "name": "Mainline National Bank",
+      "fid": "9869"
     },
     "model": "api.Institution",
     "pk": 186
   },
   {
     "fields": {
-      "name": "Home Federal Savings Bank(MN/IA)",
-      "fid": "594"
+      "organization": "ISC",
+      "name": "Marquette Banks",
+      "fid": "1301"
     },
     "model": "api.Institution",
     "pk": 187
   },
   {
     "fields": {
-      "name": "Hudson Valley FCU",
-      "fid": "695"
+      "organization": "Mayo Employees FCU",
+      "name": "Mayo Employees Federal Credit Union",
+      "fid": "291975478"
     },
     "model": "api.Institution",
     "pk": 188
   },
   {
     "fields": {
-      "name": "Hughes Federal Credit Union",
-      "fid": "745"
+      "organization": "McCoy Federal Credit Union",
+      "name": "McCoy Federal Credit Union",
+      "fid": "263179956"
     },
     "model": "api.Institution",
     "pk": 189
   },
   {
     "fields": {
-      "name": "Huntington National Bank",
-      "fid": "574"
+      "organization": "Mellon Bank",
+      "name": "Mellon Bank",
+      "fid": "1226"
     },
     "model": "api.Institution",
     "pk": 190
   },
   {
     "fields": {
-      "name": "IBM Southeast Employees Federal Credit Union",
-      "fid": "696"
+      "organization": "Mercantile Brokerage",
+      "name": "Mercantile Brokerage Services",
+      "fid": "011"
     },
     "model": "api.Institution",
     "pk": 191
   },
   {
     "fields": {
-      "name": "Iinvestor360",
-      "fid": "792"
+      "organization": "PutnamDefinedContributions",
+      "name": "Mercer",
+      "fid": "8007527525"
     },
     "model": "api.Institution",
     "pk": 192
   },
   {
     "fields": {
-      "name": "ING DIRECT",
-      "fid": "658"
+      "organization": "MERCK, SHARPE&DOHME FCU",
+      "name": "Merck Sharp&Dohme FCU",
+      "fid": "231386645"
     },
     "model": "api.Institution",
     "pk": 193
   },
   {
     "fields": {
-      "name": "ING DIRECT (Canada)",
-      "fid": "421"
+      "organization": "ISC",
+      "name": "Merrill Lynch Online Payment",
+      "fid": "7301"
     },
     "model": "api.Institution",
     "pk": 194
   },
   {
     "fields": {
-      "name": "ING Institutional Plan Services ",
-      "fid": "735"
+      "organization": "Merrill Lynch & Co., Inc.",
+      "name": "Merrill Lynch&Co., Inc.",
+      "fid": "5550"
     },
     "model": "api.Institution",
     "pk": 195
   },
   {
     "fields": {
-      "name": "Insight CU",
-      "fid": "697"
+      "organization": "MTRO",
+      "name": "Metro Bank",
+      "fid": "9970"
     },
     "model": "api.Institution",
     "pk": 196
   },
   {
     "fields": {
-      "name": "International Bank of Commerce",
-      "fid": "743"
+      "organization": "MSUFCU",
+      "name": "Michigan State University Federal CU",
+      "fid": "272479663"
     },
     "model": "api.Institution",
     "pk": 197
   },
   {
     "fields": {
-      "name": "IronStone Bank",
-      "fid": "563"
+      "organization": "Missoula Federal Credit Union",
+      "name": "Missoula Federal Credit Union",
+      "fid": "5097"
     },
     "model": "api.Institution",
     "pk": 198
   },
   {
     "fields": {
-      "name": "J.P. Morgan",
-      "fid": "700"
+      "organization": "Smithbarney.com",
+      "name": "Morgan Stanley (Smith Barney)",
+      "fid": "5207"
     },
     "model": "api.Institution",
     "pk": 199
   },
   {
     "fields": {
-      "name": "J.P. Morgan Clearing Corp.",
-      "fid": "701"
+      "organization": "msdw.com",
+      "name": "Morgan Stanley ClientServ",
+      "fid": "1235"
     },
     "model": "api.Institution",
     "pk": 200
   },
   {
     "fields": {
-      "name": "J.P. Morgan Private Banking",
-      "fid": "740"
+      "organization": "Motorola Employees CU",
+      "name": "Motorola Employees Credit Union",
+      "fid": "271984311"
     },
     "model": "api.Institution",
     "pk": 201
   },
   {
     "fields": {
-      "name": "Janney Montgomery Scott LLC",
-      "fid": "698"
+      "organization": "MACU",
+      "name": "Mountain America Credit Union",
+      "fid": "324079555"
     },
     "model": "api.Institution",
     "pk": 202
   },
   {
     "fields": {
-      "name": "Janus",
-      "fid": "615"
+      "organization": "MTC Federal Credit Union",
+      "name": "MTC Federal Credit Union",
+      "fid": "053285173"
     },
     "model": "api.Institution",
     "pk": 203
   },
   {
     "fields": {
-      "name": "JPMorgan Chase Bank",
-      "fid": "435"
+      "organization": "Municipal ECU of Baltimore,Inc.",
+      "name": "Municipal Employees Credit Union of Baltimore, Inc.",
+      "fid": "252076468"
     },
     "model": "api.Institution",
     "pk": 204
   },
   {
     "fields": {
-      "name": "JPMorgan Chase Bank (Texas)",
-      "fid": "434"
+      "organization": "Nantucket",
+      "name": "Nantucket Bank",
+      "fid": "466"
     },
     "model": "api.Institution",
     "pk": 205
   },
   {
     "fields": {
-      "name": "JPMorgan Retirement Plan Services",
-      "fid": "617"
+      "organization": "NATIONAL CITY",
+      "name": "National City",
+      "fid": "5860"
     },
     "model": "api.Institution",
     "pk": 206
   },
   {
     "fields": {
-      "name": "JSC Federal Credit Union",
-      "fid": "699"
+      "organization": "National Penn Bank",
+      "name": "National Penn Bank",
+      "fid": "6301"
     },
     "model": "api.Institution",
     "pk": 207
   },
   {
     "fields": {
-      "name": "Kennedy Space Center FCU",
-      "fid": "501"
+      "organization": "Navy Army Federal Credit Union",
+      "name": "Navy Army Federal Credit Union",
+      "fid": "111904503"
     },
     "model": "api.Institution",
     "pk": 208
   },
   {
     "fields": {
-      "name": "KeyBank",
-      "fid": "453"
+      "organization": "NetxClient",
+      "name": "NetxClient UAT",
+      "fid": "1023"
     },
     "model": "api.Institution",
     "pk": 209
   },
   {
     "fields": {
-      "name": "Kinecta Federal Credit Union",
-      "fid": "646"
+      "organization": "PSI",
+      "name": "Nevada Federal Credit Union",
+      "fid": "10888"
     },
     "model": "api.Institution",
     "pk": 210
   },
   {
     "fields": {
-      "name": "Kirtland Federal Credit Union",
-      "fid": "544"
+      "organization": "295-3",
+      "name": "Nevada State Bank - New",
+      "fid": "1121"
     },
     "model": "api.Institution",
     "pk": 211
   },
   {
     "fields": {
-      "name": "Kitsap Community Credit Union",
-      "fid": "728"
+      "organization": "ISC",
+      "name": "Nevada State Bank - OLD",
+      "fid": "5401"
     },
     "model": "api.Institution",
     "pk": 212
   },
   {
     "fields": {
-      "name": "Las Colinas FCU",
-      "fid": "524"
+      "organization": "New England Federal Credit Union",
+      "name": "New England Federal Credit Union",
+      "fid": "2104"
     },
     "model": "api.Institution",
     "pk": 213
   },
   {
     "fields": {
-      "name": "LaSalle Bank Midwest",
-      "fid": "455"
+      "organization": "DI",
+      "name": "North Country FCU",
+      "fid": "211691004"
     },
     "model": "api.Institution",
     "pk": 214
   },
   {
     "fields": {
-      "name": "LaSalle Bank NA",
-      "fid": "474"
+      "organization": "NorthEast Alliance FCU",
+      "name": "NorthEast Alliance FCU",
+      "fid": "221982130"
     },
     "model": "api.Institution",
     "pk": 215
   },
   {
     "fields": {
-      "name": "Local Government Federal Credit Union",
-      "fid": "748"
+      "organization": "ORG",
+      "name": "Northern Trust - Banking",
+      "fid": "5804"
     },
     "model": "api.Institution",
     "pk": 216
   },
   {
     "fields": {
-      "name": "Los Alamos National Bank",
-      "fid": "476"
+      "organization": "Northern Trust Investments",
+      "name": "Northern Trust - Investments",
+      "fid": "6028"
     },
     "model": "api.Institution",
     "pk": 217
   },
   {
     "fields": {
-      "name": "M & T Bank",
-      "fid": "702"
+      "organization": "Cavion",
+      "name": "Northwest Community CU",
+      "fid": "1948"
     },
     "model": "api.Institution",
     "pk": 218
   },
   {
     "fields": {
-      "name": "Mainline National Bank",
-      "fid": "663"
+      "organization": "ISC",
+      "name": "Norwest",
+      "fid": "4601"
     },
     "model": "api.Institution",
     "pk": 219
   },
   {
     "fields": {
-      "name": "Marquette Banks",
-      "fid": "703"
+      "organization": "Novartis FCU",
+      "name": "Novartis Federal Credit Union",
+      "fid": "221278556"
     },
     "model": "api.Institution",
     "pk": 220
   },
   {
     "fields": {
-      "name": "Mayo Employees Federal Credit Union",
-      "fid": "598"
+      "organization": "NW Preferred FCU",
+      "name": "NW Preferred Federal Credit Union",
+      "fid": "323076575"
     },
     "model": "api.Institution",
     "pk": 221
   },
   {
     "fields": {
-      "name": "McCoy Federal Credit Union",
-      "fid": "525"
+      "organization": "OCTFCU",
+      "name": "OCTFCU",
+      "fid": "17600"
     },
     "model": "api.Institution",
     "pk": 222
   },
   {
     "fields": {
-      "name": "Mellon Bank",
-      "fid": "454"
+      "organization": "ONB",
+      "name": "Old National Bank",
+      "fid": "11638"
     },
     "model": "api.Institution",
     "pk": 223
   },
   {
     "fields": {
-      "name": "Mercantile Brokerage Services",
-      "fid": "461"
+      "organization": "Oppenheimer",
+      "name": "Oppenheimer & Co. Inc.",
+      "fid": "125"
     },
     "model": "api.Institution",
     "pk": 224
   },
   {
     "fields": {
-      "name": "Mercer",
-      "fid": "704"
+      "organization": "10876",
+      "name": "OptionsXpress, Inc",
+      "fid": "10876"
     },
     "model": "api.Institution",
     "pk": 225
   },
   {
     "fields": {
-      "name": "Merck Sharp&Dohme FCU",
-      "fid": "609"
+      "organization": "tiaaoregon",
+      "name": "Oregon College Savings Plan",
+      "fid": "51498"
     },
     "model": "api.Institution",
     "pk": 226
   },
   {
     "fields": {
-      "name": "Merrill Lynch Online Payment",
-      "fid": "705"
+      "organization": "ORCC",
+      "name": "Oregon Community Credit Union",
+      "fid": "2077"
     },
     "model": "api.Institution",
     "pk": 227
   },
   {
     "fields": {
-      "name": "Merrill Lynch&Co., Inc.",
-      "fid": "510"
+      "organization": "Patelco Credit Union",
+      "name": "Patelco CU",
+      "fid": "2000"
     },
     "model": "api.Institution",
     "pk": 228
   },
   {
     "fields": {
-      "name": "Metro Bank",
-      "fid": "654"
+      "organization": "PAT FCU",
+      "name": "Patriots Federal Credit Union",
+      "fid": "322281963"
     },
     "model": "api.Institution",
     "pk": 229
   },
   {
     "fields": {
-      "name": "Michigan State University Federal CU",
-      "fid": "649"
+      "organization": "Peninsula Credit Union",
+      "name": "Peninsula Community Federal Credit Union",
+      "fid": "325182344"
     },
     "model": "api.Institution",
     "pk": 230
   },
   {
     "fields": {
-      "name": "Mission Federal Credit Union",
-      "fid": "758"
+      "organization": "Penson Financial Services Inc",
+      "name": "Penson Financial Services",
+      "fid": "10780"
     },
     "model": "api.Institution",
     "pk": 231
   },
   {
     "fields": {
-      "name": "Missoula Federal Credit Union",
-      "fid": "706"
+      "organization": "Picatinny Federal Credit Union",
+      "name": "Picatinny Federal Credit Union",
+      "fid": "221275216"
     },
     "model": "api.Institution",
     "pk": 232
   },
   {
     "fields": {
-      "name": "Morgan Stanley (Smith Barney)",
-      "fid": "707"
+      "organization": "ISC",
+      "name": "PNC Bank",
+      "fid": "4501"
     },
     "model": "api.Institution",
     "pk": 233
   },
   {
     "fields": {
-      "name": "Morgan Stanley ClientServ",
-      "fid": "500"
+      "organization": "DI",
+      "name": "Premier America Credit Union",
+      "fid": "322283990"
     },
     "model": "api.Institution",
     "pk": 234
   },
   {
     "fields": {
-      "name": "Motorola Employees Credit Union",
-      "fid": "534"
+      "organization": "Prudential Retirement Services",
+      "name": "Prudential Retirement",
+      "fid": "1271"
     },
     "model": "api.Institution",
     "pk": 235
   },
   {
     "fields": {
-      "name": "Mountain America Credit Union",
-      "fid": "657"
+      "organization": "Teknowledge",
+      "name": "PSECU",
+      "fid": "54354"
     },
     "model": "api.Institution",
     "pk": 236
   },
   {
     "fields": {
-      "name": "MTC Federal Credit Union",
-      "fid": "593"
+      "organization": "RBB",
+      "name": "RaboBank America",
+      "fid": "11540"
     },
     "model": "api.Institution",
     "pk": 237
   },
   {
     "fields": {
-      "name": "Municipal Employees Credit Union of Baltimore, Inc.",
-      "fid": "584"
+      "organization": "RBC Dain Rauscher",
+      "name": "RBC Dain Rauscher",
+      "fid": "8035"
     },
     "model": "api.Institution",
     "pk": 238
   },
   {
     "fields": {
-      "name": "myStreetscape",
-      "fid": "495"
+      "organization": "Red Crown FCU",
+      "name": "Red Crown Federal Credit Union",
+      "fid": "303986148"
     },
     "model": "api.Institution",
     "pk": 239
   },
   {
     "fields": {
-      "name": "Nantucket Bank",
-      "fid": "456"
+      "organization": "Harland Financial Solutions",
+      "name": "Redstone Federal Credit Union",
+      "fid": "2143"
     },
     "model": "api.Institution",
     "pk": 240
   },
   {
     "fields": {
-      "name": "National City",
-      "fid": "627"
+      "organization": "regions.com",
+      "name": "Regions Bank",
+      "fid": "243"
     },
     "model": "api.Institution",
     "pk": 241
   },
   {
     "fields": {
-      "name": "National Penn Bank",
-      "fid": "457"
+      "organization": "W.C.T.A Federal Credit Union",
+      "name": "Reliant Community Credit Union",
+      "fid": "222382438"
     },
     "model": "api.Institution",
     "pk": 242
   },
   {
     "fields": {
-      "name": "Navy Army Federal Credit Union",
-      "fid": "551"
+      "organization": "Robert W. Baird & Co.",
+      "name": "Robert W. Baird & Co.",
+      "fid": "1109"
     },
     "model": "api.Institution",
     "pk": 243
   },
   {
     "fields": {
-      "name": "NetxClient UAT",
-      "fid": "761"
+      "organization": "SAC Federal CU",
+      "name": "SAC FEDERAL CREDIT UNION",
+      "fid": "091901480"
     },
     "model": "api.Institution",
     "pk": 244
   },
   {
     "fields": {
-      "name": "Nevada Federal Credit Union",
-      "fid": "552"
+      "organization": "DI",
+      "name": "Safe Credit Union - OFX Beta",
+      "fid": "321173742"
     },
     "model": "api.Institution",
     "pk": 245
   },
   {
     "fields": {
-      "name": "Nevada State Bank - New",
-      "fid": "458"
+      "organization": "SafeAmerica Credit Union",
+      "name": "SafeAmerica Credit Union",
+      "fid": "321171757"
     },
     "model": "api.Institution",
     "pk": 246
   },
   {
     "fields": {
-      "name": "Nevada State Bank - OLD",
-      "fid": "708"
+      "organization": "Salt Lake City Credit Union",
+      "name": "Salt Lake City Credit Union",
+      "fid": "324079186"
     },
     "model": "api.Institution",
     "pk": 247
   },
   {
     "fields": {
-      "name": "New England Federal Credit Union",
-      "fid": "709"
+      "organization": "pfm-l3g",
+      "name": "Santa Barbara Bank & Trust",
+      "fid": "5524"
     },
     "model": "api.Institution",
     "pk": 248
   },
   {
     "fields": {
-      "name": "North Carolina State Employees Credit Union",
-      "fid": "742"
+      "organization": "Teknowledge",
+      "name": "Schools Financial Credit Union",
+      "fid": "90001"
     },
     "model": "api.Institution",
     "pk": 249
   },
   {
     "fields": {
-      "name": "North Carolina State Employees' Credit Union",
-      "fid": "632"
+      "organization": "The 401k Company",
+      "name": "Schwab Retirement Plan Services",
+      "fid": "11811"
     },
     "model": "api.Institution",
     "pk": 250
   },
   {
     "fields": {
-      "name": "North Country FCU",
-      "fid": "754"
+      "organization": "Scottrade",
+      "name": "Scottrade, Inc.",
+      "fid": "777"
     },
     "model": "api.Institution",
     "pk": 251
   },
   {
     "fields": {
-      "name": "NorthEast Alliance FCU",
-      "fid": "613"
+      "organization": "CITIGROUP",
+      "name": "Sears Card",
+      "fid": "26810"
     },
     "model": "api.Institution",
     "pk": 252
   },
   {
     "fields": {
-      "name": "Northern Trust - Banking",
-      "fid": "481"
+      "organization": "Security 1st FCU",
+      "name": "Security 1st FCU",
+      "fid": "314986292"
     },
     "model": "api.Institution",
     "pk": 253
   },
   {
     "fields": {
-      "name": "Northern Trust - Investments",
-      "fid": "507"
+      "organization": "ShareBuilder",
+      "name": "ShareBuilder",
+      "fid": "5575"
     },
     "model": "api.Institution",
     "pk": 254
   },
   {
     "fields": {
-      "name": "Northwest Community CU",
-      "fid": "741"
+      "organization": "Sierra Central Credit Union",
+      "name": "Sierra Central Credit Union",
+      "fid": "321174770"
     },
     "model": "api.Institution",
     "pk": 255
   },
   {
     "fields": {
-      "name": "Norwest",
-      "fid": "710"
+      "organization": "Washington Telephone FCU",
+      "name": "Signal Financial Federal Credit Union",
+      "fid": "255075495"
     },
     "model": "api.Institution",
     "pk": 256
   },
   {
     "fields": {
-      "name": "Novartis Federal Credit Union",
-      "fid": "581"
+      "organization": "SSSCU",
+      "name": "Silver State Schools CU",
+      "fid": "322484265"
     },
     "model": "api.Institution",
     "pk": 257
   },
   {
     "fields": {
-      "name": "NW Preferred Federal Credit Union",
-      "fid": "579"
+      "organization": "SIOUXLAND FCU",
+      "name": "Siouxland Federal Credit Union",
+      "fid": "304982235"
     },
     "model": "api.Institution",
     "pk": 258
   },
   {
     "fields": {
-      "name": "OCTFCU",
-      "fid": "587"
+      "organization": "SmithBarney",
+      "name": "Smith Barney - Transactions",
+      "fid": "3201"
     },
     "model": "api.Institution",
     "pk": 259
   },
   {
     "fields": {
-      "name": "Old National Bank",
-      "fid": "526"
+      "organization": "SOUNDCUDC",
+      "name": "Sound CU",
+      "fid": "325183220"
     },
     "model": "api.Institution",
     "pk": 260
   },
   {
     "fields": {
-      "name": "Oppenheimer & Co. Inc.",
-      "fid": "711"
+      "organization": "MZeroOneZeroSCBT",
+      "name": "South Carolina Bank and Trust",
+      "fid": "053200983"
     },
     "model": "api.Institution",
     "pk": 261
   },
   {
     "fields": {
-      "name": "OptionsXpress, Inc",
-      "fid": "565"
+      "organization": "ISC",
+      "name": "South Trust Bank",
+      "fid": "6101"
     },
     "model": "api.Institution",
     "pk": 262
   },
   {
     "fields": {
-      "name": "Oregon College Savings Plan",
-      "fid": "712"
+      "organization": "Southeastern FCU",
+      "name": "Southeastern CU",
+      "fid": "261271500"
     },
     "model": "api.Institution",
     "pk": 263
   },
   {
     "fields": {
-      "name": "Oregon Community Credit Union",
-      "fid": "781"
+      "organization": "MOneFortyEight",
+      "name": "Southern Community Bank and Trust (SCB&T)",
+      "fid": "053112097"
     },
     "model": "api.Institution",
     "pk": 264
   },
   {
     "fields": {
-      "name": "Patelco CU",
-      "fid": "460"
+      "organization": "Southwest Airlines EFCU",
+      "name": "Southwest Airlines FCU",
+      "fid": "311090673"
     },
     "model": "api.Institution",
     "pk": 265
   },
   {
     "fields": {
-      "name": "Patriots Federal Credit Union",
-      "fid": "596"
+      "organization": "Jack Henry",
+      "name": "Southwest Missouri Bank",
+      "fid": "101203641"
     },
     "model": "api.Institution",
     "pk": 266
   },
   {
     "fields": {
-      "name": "Peninsula Community Federal Credit Union",
-      "fid": "557"
+      "organization": "SpectrumConnect",
+      "name": "Spectrum Connect/Reich&Tang",
+      "fid": "6510"
     },
     "model": "api.Institution",
     "pk": 267
   },
   {
     "fields": {
-      "name": "Penson Financial Services",
-      "fid": "570"
+      "organization": "ISC",
+      "name": "Standard Federal Bank",
+      "fid": "6507"
     },
     "model": "api.Institution",
     "pk": 268
   },
   {
     "fields": {
-      "name": "Picatinny Federal Credit Union",
-      "fid": "508"
+      "organization": "AFS",
+      "name": "Sterne Agee",
+      "fid": "2170"
     },
     "model": "api.Institution",
     "pk": 269
   },
   {
     "fields": {
-      "name": "PNC Bank",
-      "fid": "634"
+      "organization": "Summit Credit Union",
+      "name": "Summit Credit Union (WI)",
+      "fid": "275979034"
     },
     "model": "api.Institution",
     "pk": 270
   },
   {
     "fields": {
-      "name": "Premier America Credit Union",
-      "fid": "764"
+      "organization": "SunTrust PC Banking",
+      "name": "SunTrust",
+      "fid": "2801"
     },
     "model": "api.Institution",
     "pk": 271
   },
   {
     "fields": {
-      "name": "Prudential Retirement",
-      "fid": "567"
+      "organization": "SVB",
+      "name": "SVB",
+      "fid": "09535"
     },
     "model": "api.Institution",
     "pk": 272
   },
   {
     "fields": {
-      "name": "PSECU",
-      "fid": "539"
+      "organization": "TangerineBank",
+      "name": "Tangerine (Canada)",
+      "fid": "10951"
     },
     "model": "api.Institution",
     "pk": 273
   },
   {
     "fields": {
-      "name": "RaboBank America",
-      "fid": "744"
+      "organization": "ameritrade.com",
+      "name": "TD Ameritrade",
+      "fid": "5024"
     },
     "model": "api.Institution",
     "pk": 274
   },
   {
     "fields": {
-      "name": "RBC Dain Rauscher",
-      "fid": "713"
+      "organization": "Tech CU",
+      "name": "Technology Credit Union - CA",
+      "fid": "11257"
     },
     "model": "api.Institution",
     "pk": 275
   },
   {
     "fields": {
-      "name": "Red Crown Federal Credit Union",
-      "fid": "504"
+      "organization": "TexansCU",
+      "name": "Texans Credit Union",
+      "fid": "-1"
     },
     "model": "api.Institution",
     "pk": 276
   },
   {
     "fields": {
-      "name": "Redstone Federal Credit Union",
-      "fid": "633"
+      "organization": "TexasDow",
+      "name": "Texas Dow Employees Credit Union",
+      "fid": "313185515"
     },
     "model": "api.Institution",
     "pk": 277
   },
   {
     "fields": {
-      "name": "Regions Bank",
-      "fid": "462"
+      "organization": "Texas State Bank",
+      "name": "Texas State Bank - McAllen",
+      "fid": "114909013"
     },
     "model": "api.Institution",
     "pk": 278
   },
   {
     "fields": {
-      "name": "Reliant Community Credit Union",
-      "fid": "595"
+      "organization": "DI",
+      "name": "The Community Bank",
+      "fid": "211371476"
     },
     "model": "api.Institution",
     "pk": 279
   },
   {
     "fields": {
-      "name": "Robert W. Baird & Co.",
-      "fid": "714"
+      "organization": "TMB",
+      "name": "The Mechanics Bank",
+      "fid": "121102036"
     },
     "model": "api.Institution",
     "pk": 280
   },
   {
     "fields": {
-      "name": "Royce&Associates",
-      "fid": "589"
+      "organization": "The Queens Federal Credit Union",
+      "name": "The Queen's Federal Credit Union",
+      "fid": "321379504"
     },
     "model": "api.Institution",
     "pk": 281
   },
   {
     "fields": {
-      "name": "SAC FEDERAL CREDIT UNION",
-      "fid": "509"
+      "organization": "IBMCU",
+      "name": "Think Federal Credit Union",
+      "fid": "291975465"
     },
     "model": "api.Institution",
     "pk": 282
   },
   {
     "fields": {
-      "name": "Sacramento Credit Union",
-      "fid": "651"
+      "organization": "tiaa-cref.org",
+      "name": "TIAA-CREF",
+      "fid": "041"
     },
     "model": "api.Institution",
     "pk": 283
   },
   {
     "fields": {
-      "name": "Safe Credit Union - OFX Beta",
-      "fid": "422"
+      "organization": "TIAA-CREF",
+      "name": "TIAA-CREF Retirement Services",
+      "fid": "1304"
     },
     "model": "api.Institution",
     "pk": 284
   },
   {
     "fields": {
-      "name": "SafeAmerica Credit Union",
-      "fid": "597"
+      "organization": "DI",
+      "name": "Tower Federal Credit Union",
+      "fid": "255077370"
     },
     "model": "api.Institution",
     "pk": 285
   },
   {
     "fields": {
-      "name": "Salt Lake City Credit Union",
-      "fid": "619"
+      "organization": "Tri Boro Federal Credit Union",
+      "name": "Tri Boro Federal Credit Union",
+      "fid": "243382747"
     },
     "model": "api.Institution",
     "pk": 286
   },
   {
     "fields": {
-      "name": "Sandia Laboratory Federal Credit Union",
-      "fid": "780"
+      "organization": "DI",
+      "name": "Truliant FCU",
+      "fid": "253177832"
     },
     "model": "api.Institution",
     "pk": 287
   },
   {
     "fields": {
-      "name": "Santa Barbara Bank & Trust",
-      "fid": "659"
+      "organization": "US First FCU",
+      "name": "U.S. First FCU",
+      "fid": "321076289"
     },
     "model": "api.Institution",
     "pk": 288
   },
   {
     "fields": {
-      "name": "Schools Financial Credit Union",
-      "fid": "577"
+      "organization": "Intuit",
+      "name": "UBS Financial Services Inc.",
+      "fid": "7772"
     },
     "model": "api.Institution",
     "pk": 289
   },
   {
     "fields": {
-      "name": "Schwab Retirement Plan Services",
-      "fid": "750"
+      "organization": "UMBOFX",
+      "name": "UMB",
+      "fid": "468"
     },
     "model": "api.Institution",
     "pk": 290
   },
   {
     "fields": {
-      "name": "Scottrade, Inc.",
-      "fid": "623"
+      "organization": "UMB",
+      "name": "UMB Bank",
+      "fid": "0"
     },
     "model": "api.Institution",
     "pk": 291
   },
   {
     "fields": {
-      "name": "Sears Card",
-      "fid": "715"
+      "organization": "Union Bank of California",
+      "name": "Union Bank of California",
+      "fid": "2901"
     },
     "model": "api.Institution",
     "pk": 292
   },
   {
     "fields": {
-      "name": "Securities America",
-      "fid": "641"
+      "organization": "ISC",
+      "name": "United California Bank",
+      "fid": "2701"
     },
     "model": "api.Institution",
     "pk": 293
   },
   {
     "fields": {
-      "name": "Security 1st FCU",
-      "fid": "601"
+      "organization": "United Federal Credit Union",
+      "name": "United Federal CU - PowerLink",
+      "fid": "1908"
     },
     "model": "api.Institution",
     "pk": 294
   },
   {
     "fields": {
-      "name": "ShareBuilder",
-      "fid": "614"
+      "organization": "DI",
+      "name": "United Teletech Financial",
+      "fid": "221276011"
     },
     "model": "api.Institution",
     "pk": 295
   },
   {
     "fields": {
-      "name": "Sierra Central Credit Union",
-      "fid": "502"
+      "organization": "DI",
+      "name": "UNIVERSITY & STATE EMPLOYEES CU",
+      "fid": "322281691"
     },
     "model": "api.Institution",
     "pk": 296
   },
   {
     "fields": {
-      "name": "Signal Financial Federal Credit Union",
-      "fid": "518"
+      "organization": "University Credit Union",
+      "name": "University Credit Union",
+      "fid": "267077850"
     },
     "model": "api.Institution",
     "pk": 297
   },
   {
     "fields": {
-      "name": "Silver State Schools CU",
-      "fid": "624"
+      "organization": "Univerisity FCU",
+      "name": "University Federal Credit Union",
+      "fid": "314977405"
     },
     "model": "api.Institution",
     "pk": 298
   },
   {
     "fields": {
-      "name": "Siouxland Federal Credit Union",
-      "fid": "606"
+      "organization": "US Bank",
+      "name": "US Bank",
+      "fid": "1401"
     },
     "model": "api.Institution",
     "pk": 299
   },
   {
     "fields": {
-      "name": "Smith Barney - Investments",
-      "fid": "625"
+      "organization": "USAA",
+      "name": "USAA Federal Savings Bank",
+      "fid": "24591"
     },
     "model": "api.Institution",
     "pk": 300
   },
   {
     "fields": {
-      "name": "Smith Barney - Transactions",
-      "fid": "464"
+      "organization": "USAA",
+      "name": "USAA Investment Mgmt Co",
+      "fid": "24592"
     },
     "model": "api.Institution",
     "pk": 301
   },
   {
     "fields": {
-      "name": "Sound CU",
-      "fid": "793"
+      "organization": "Utah Community Credit Union",
+      "name": "Utah Community Credit Union",
+      "fid": "324377820"
     },
     "model": "api.Institution",
     "pk": 302
   },
   {
     "fields": {
-      "name": "South Carolina Bank and Trust",
-      "fid": "755"
+      "organization": "valic.com",
+      "name": "VALIC",
+      "fid": "77019"
     },
     "model": "api.Institution",
     "pk": 303
   },
   {
     "fields": {
-      "name": "South Trust Bank",
-      "fid": "716"
+      "organization": "Van Kampen Funds, Inc.",
+      "name": "Van Kampen Funds, Inc.",
+      "fid": "3625"
     },
     "model": "api.Institution",
     "pk": 304
   },
   {
     "fields": {
-      "name": "Southeastern CU",
-      "fid": "511"
+      "organization": "The Vanguard Group",
+      "name": "Vanguard Group",
+      "fid": "1358"
     },
     "model": "api.Institution",
     "pk": 305
   },
   {
     "fields": {
-      "name": "Southern Community Bank and Trust (SCB&T)",
-      "fid": "751"
+      "organization": "EECU-St. Louis",
+      "name": "Vantage Credit Union",
+      "fid": "281081479"
     },
     "model": "api.Institution",
     "pk": 306
   },
   {
     "fields": {
-      "name": "Southwest Airlines FCU",
-      "fid": "465"
+      "organization": "Velocity Credit Union",
+      "name": "Velocity Credit Union",
+      "fid": "9909"
     },
     "model": "api.Institution",
     "pk": 307
   },
   {
     "fields": {
-      "name": "Southwest Missouri Bank",
-      "fid": "759"
+      "organization": "Virginia Educators CU",
+      "name": "Virginia Educators Credit Union",
+      "fid": "251481355"
     },
     "model": "api.Institution",
     "pk": 308
   },
   {
     "fields": {
-      "name": "Spectrum Connect/Reich&Tang",
-      "fid": "463"
+      "organization": "VISA",
+      "name": "VISA Information Source",
+      "fid": "10942"
     },
     "model": "api.Institution",
     "pk": 309
   },
   {
     "fields": {
-      "name": "Standard Federal Bank",
-      "fid": "717"
+      "organization": "Wachovia",
+      "name": "Wachovia Bank",
+      "fid": "4309"
     },
     "model": "api.Institution",
     "pk": 310
   },
   {
     "fields": {
-      "name": "Sterne Agee",
-      "fid": "736"
+      "organization": "waddell",
+      "name": "Waddell & Reed - Ivy Funds",
+      "fid": "49623"
     },
     "model": "api.Institution",
     "pk": 311
   },
   {
     "fields": {
-      "name": "Summit Credit Union (WI)",
-      "fid": "547"
+      "organization": "weitz.com",
+      "name": "Weitz Funds",
+      "fid": "weitz.com"
     },
     "model": "api.Institution",
     "pk": 312
   },
   {
     "fields": {
-      "name": "Suncoast Schools FCU",
-      "fid": "653"
+      "organization": "WF",
+      "name": "Wells Fargo",
+      "fid": "3000"
     },
     "model": "api.Institution",
     "pk": 313
   },
   {
     "fields": {
-      "name": "SunTrust",
-      "fid": "442"
+      "organization": "strong.com",
+      "name": "Wells Fargo Advisor",
+      "fid": "1030"
     },
     "model": "api.Institution",
     "pk": 314
   },
   {
     "fields": {
-      "name": "SVB",
-      "fid": "791"
+      "organization": "WF",
+      "name": "Wells Fargo Advisors",
+      "fid": "12748"
     },
     "model": "api.Institution",
     "pk": 315
   },
   {
     "fields": {
-      "name": "T. Rowe Price",
-      "fid": "466"
+      "organization": "Wells Fargo",
+      "name": "Wells Fargo Bank 2013",
+      "fid": "3001"
     },
     "model": "api.Institution",
     "pk": 316
   },
   {
     "fields": {
-      "name": "Tangerine (Canada)",
-      "fid": "794"
+      "organization": "wellsfargo.com",
+      "name": "Wells Fargo Investments, LLC",
+      "fid": "10762"
     },
     "model": "api.Institution",
     "pk": 317
   },
   {
     "fields": {
-      "name": "TD Ameritrade",
-      "fid": "425"
+      "organization": "Wells Fargo Trust",
+      "name": "Wells Fargo Trust-Investment Mgt",
+      "fid": "6955"
     },
     "model": "api.Institution",
     "pk": 318
   },
   {
     "fields": {
-      "name": "TD Bank",
-      "fid": "652"
+      "organization": "Windward Community FCU",
+      "name": "Windward Community FCU",
+      "fid": "321380315"
     },
     "model": "api.Institution",
     "pk": 319
   },
   {
     "fields": {
-      "name": "Technology Credit Union - CA",
-      "fid": "467"
+      "organization": "DI",
+      "name": "Wings Financial",
+      "fid": "296076152"
     },
     "model": "api.Institution",
     "pk": 320
   },
   {
     "fields": {
-      "name": "Texans Credit Union",
-      "fid": "771"
+      "organization": "JackHenry",
+      "name": "Woodsboro Bank",
+      "fid": "7479"
     },
     "model": "api.Institution",
     "pk": 321
   },
   {
     "fields": {
-      "name": "Texas Dow Employees Credit Union",
-      "fid": "512"
+      "organization": "Wright Patman Congressional FCU",
+      "name": "Wright Patman Congressional FCU",
+      "fid": "254074345"
     },
     "model": "api.Institution",
     "pk": 322
   },
   {
     "fields": {
-      "name": "Texas State Bank - McAllen",
-      "fid": "586"
+      "organization": "WSECU",
+      "name": "WSECU",
+      "fid": "325181028"
     },
     "model": "api.Institution",
     "pk": 323
   },
   {
     "fields": {
-      "name": "The Community Bank",
-      "fid": "650"
+      "organization": "Yakima Valley Credit Union",
+      "name": "Yakima Valley Credit Union",
+      "fid": "325183796"
     },
     "model": "api.Institution",
     "pk": 324
   },
   {
     "fields": {
-      "name": "The Golden1 Credit Union",
-      "fid": "778"
+      "organization": "244-3",
+      "name": "Zions Bank",
+      "fid": "1115"
     },
     "model": "api.Institution",
     "pk": 325
   },
   {
     "fields": {
-      "name": "The Mechanics Bank",
-      "fid": "482"
+      "organization": "Wachovia",
+      "name": "Wachovia",
+      "fid": "4301"
     },
     "model": "api.Institution",
     "pk": 326
-  },
-  {
-    "fields": {
-      "name": "The Queen's Federal Credit Union",
-      "fid": "607"
-    },
-    "model": "api.Institution",
-    "pk": 327
-  },
-  {
-    "fields": {
-      "name": "Think Federal Credit Union",
-      "fid": "538"
-    },
-    "model": "api.Institution",
-    "pk": 328
-  },
-  {
-    "fields": {
-      "name": "TIAA-CREF",
-      "fid": "767"
-    },
-    "model": "api.Institution",
-    "pk": 329
-  },
-  {
-    "fields": {
-      "name": "TIAA-CREF Retirement Services",
-      "fid": "797"
-    },
-    "model": "api.Institution",
-    "pk": 330
-  },
-  {
-    "fields": {
-      "name": "Tower Federal Credit Union",
-      "fid": "769"
-    },
-    "model": "api.Institution",
-    "pk": 331
-  },
-  {
-    "fields": {
-      "name": "Tri Boro Federal Credit Union",
-      "fid": "571"
-    },
-    "model": "api.Institution",
-    "pk": 332
-  },
-  {
-    "fields": {
-      "name": "Truliant FCU",
-      "fid": "426"
-    },
-    "model": "api.Institution",
-    "pk": 333
-  },
-  {
-    "fields": {
-      "name": "U.S. First FCU",
-      "fid": "582"
-    },
-    "model": "api.Institution",
-    "pk": 334
-  },
-  {
-    "fields": {
-      "name": "UBS Financial Services Inc.",
-      "fid": "459"
-    },
-    "model": "api.Institution",
-    "pk": 335
-  },
-  {
-    "fields": {
-      "name": "UMB",
-      "fid": "660"
-    },
-    "model": "api.Institution",
-    "pk": 336
-  },
-  {
-    "fields": {
-      "name": "UMB Bank",
-      "fid": "468"
-    },
-    "model": "api.Institution",
-    "pk": 337
-  },
-  {
-    "fields": {
-      "name": "Umpqua Bank",
-      "fid": "725"
-    },
-    "model": "api.Institution",
-    "pk": 338
-  },
-  {
-    "fields": {
-      "name": "Union Bank of California",
-      "fid": "469"
-    },
-    "model": "api.Institution",
-    "pk": 339
-  },
-  {
-    "fields": {
-      "name": "United California Bank",
-      "fid": "718"
-    },
-    "model": "api.Institution",
-    "pk": 340
-  },
-  {
-    "fields": {
-      "name": "United Federal CU - PowerLink",
-      "fid": "719"
-    },
-    "model": "api.Institution",
-    "pk": 341
-  },
-  {
-    "fields": {
-      "name": "United Teletech Financial",
-      "fid": "470"
-    },
-    "model": "api.Institution",
-    "pk": 342
-  },
-  {
-    "fields": {
-      "name": "UNIVERSITY & STATE EMPLOYEES CU",
-      "fid": "776"
-    },
-    "model": "api.Institution",
-    "pk": 343
-  },
-  {
-    "fields": {
-      "name": "University Credit Union",
-      "fid": "560"
-    },
-    "model": "api.Institution",
-    "pk": 344
-  },
-  {
-    "fields": {
-      "name": "University Federal Credit Union",
-      "fid": "513"
-    },
-    "model": "api.Institution",
-    "pk": 345
-  },
-  {
-    "fields": {
-      "name": "US Bank",
-      "fid": "471"
-    },
-    "model": "api.Institution",
-    "pk": 346
-  },
-  {
-    "fields": {
-      "name": "USAA Federal Savings Bank",
-      "fid": "483"
-    },
-    "model": "api.Institution",
-    "pk": 347
-  },
-  {
-    "fields": {
-      "name": "USAA Investment Mgmt Co",
-      "fid": "665"
-    },
-    "model": "api.Institution",
-    "pk": 348
-  },
-  {
-    "fields": {
-      "name": "Utah Community Credit Union",
-      "fid": "564"
-    },
-    "model": "api.Institution",
-    "pk": 349
-  },
-  {
-    "fields": {
-      "name": "UW Credit Union",
-      "fid": "638"
-    },
-    "model": "api.Institution",
-    "pk": 350
-  },
-  {
-    "fields": {
-      "name": "VALIC",
-      "fid": "720"
-    },
-    "model": "api.Institution",
-    "pk": 351
-  },
-  {
-    "fields": {
-      "name": "Van Kampen Funds, Inc.",
-      "fid": "721"
-    },
-    "model": "api.Institution",
-    "pk": 352
-  },
-  {
-    "fields": {
-      "name": "Vanguard Group",
-      "fid": "722"
-    },
-    "model": "api.Institution",
-    "pk": 353
-  },
-  {
-    "fields": {
-      "name": "Vanguard Group, The",
-      "fid": "479"
-    },
-    "model": "api.Institution",
-    "pk": 354
-  },
-  {
-    "fields": {
-      "name": "Vantage Credit Union",
-      "fid": "499"
-    },
-    "model": "api.Institution",
-    "pk": 355
-  },
-  {
-    "fields": {
-      "name": "Velocity Credit Union",
-      "fid": "723"
-    },
-    "model": "api.Institution",
-    "pk": 356
-  },
-  {
-    "fields": {
-      "name": "Virginia Educators Credit Union",
-      "fid": "503"
-    },
-    "model": "api.Institution",
-    "pk": 357
-  },
-  {
-    "fields": {
-      "name": "VISA Information Source",
-      "fid": "626"
-    },
-    "model": "api.Institution",
-    "pk": 358
-  },
-  {
-    "fields": {
-      "name": "Wachovia Bank",
-      "fid": "537"
-    },
-    "model": "api.Institution",
-    "pk": 359
-  },
-  {
-    "fields": {
-      "name": "Waddell & Reed - Ivy Funds",
-      "fid": "724"
-    },
-    "model": "api.Institution",
-    "pk": 360
-  },
-  {
-    "fields": {
-      "name": "Weitz Funds",
-      "fid": "616"
-    },
-    "model": "api.Institution",
-    "pk": 361
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo",
-      "fid": "473"
-    },
-    "model": "api.Institution",
-    "pk": 362
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Advantage Funds",
-      "fid": "591"
-    },
-    "model": "api.Institution",
-    "pk": 363
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Advisor",
-      "fid": "516"
-    },
-    "model": "api.Institution",
-    "pk": 364
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Advisors",
-      "fid": "737"
-    },
-    "model": "api.Institution",
-    "pk": 365
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Bank",
-      "fid": "749"
-    },
-    "model": "api.Institution",
-    "pk": 366
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Bank 2013",
-      "fid": "777"
-    },
-    "model": "api.Institution",
-    "pk": 367
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Investments, LLC",
-      "fid": "568"
-    },
-    "model": "api.Institution",
-    "pk": 368
-  },
-  {
-    "fields": {
-      "name": "Wells Fargo Trust-Investment Mgt",
-      "fid": "622"
-    },
-    "model": "api.Institution",
-    "pk": 369
-  },
-  {
-    "fields": {
-      "name": "Windward Community FCU",
-      "fid": "604"
-    },
-    "model": "api.Institution",
-    "pk": 370
-  },
-  {
-    "fields": {
-      "name": "Wings Financial",
-      "fid": "756"
-    },
-    "model": "api.Institution",
-    "pk": 371
-  },
-  {
-    "fields": {
-      "name": "Woodsboro Bank",
-      "fid": "779"
-    },
-    "model": "api.Institution",
-    "pk": 372
-  },
-  {
-    "fields": {
-      "name": "Wright Patman Congressional FCU",
-      "fid": "532"
-    },
-    "model": "api.Institution",
-    "pk": 373
-  },
-  {
-    "fields": {
-      "name": "WSECU",
-      "fid": "575"
-    },
-    "model": "api.Institution",
-    "pk": 374
-  },
-  {
-    "fields": {
-      "name": "Yakima Valley Credit Union",
-      "fid": "514"
-    },
-    "model": "api.Institution",
-    "pk": 375
-  },
-  {
-    "fields": {
-      "name": "Zions Bank",
-      "fid": "630"
-    },
-    "model": "api.Institution",
-    "pk": 376
-  },
-  {
-    "fields": {
-      "name": "Wachovia",
-      "fid": "452"
-    },
-    "model": "api.Institution",
-    "pk": 377
   }
 ]
