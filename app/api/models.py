@@ -3,11 +3,14 @@ from django.contrib.auth.models import User
 
 
 class Institution(models.Model):
-  organization = models.TextField()
+
+  name = models.TextField(blank=True)
+  organization = models.TextField(blank=True)
   fid = models.TextField(unique=True)
 
 
 class Account(models.Model):
+
   user = models.ForeignKey(User)
   account_id = models.TextField()
   routing_number = models.TextField()
@@ -17,11 +20,13 @@ class Account(models.Model):
   type = models.SmallIntegerField(choices=(
     (0, 'Unknown'), (1, 'Bank'), (2, 'CreditCard'), (3, 'Investment'))
   )
+
   class Meta:
     unique_together = (('user', 'institution', 'account_id'))
 
 
 class Transaction(models.Model):
+
   user = models.ForeignKey(User)
   account = models.ForeignKey(Account)
   fitid = models.TextField()
@@ -35,5 +40,6 @@ class Transaction(models.Model):
   # Merchant Category Code
   mcc = models.PositiveSmallIntegerField(blank=True, null=True)
   checknum = models.PositiveSmallIntegerField(blank=True, null=True)
+
   class Meta:
     unique_together = (('user', 'account', 'fitid'),)
