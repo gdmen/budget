@@ -9,7 +9,7 @@
   },
   {
     "fields": {
-      "name": "Chase",
+      "name": "Chase (credit card)",
       "fid": "10898"
     },
     "model": "api.Institution",
