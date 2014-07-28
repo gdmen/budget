@@ -45,7 +45,7 @@ class AccountResource(AuthorizeUserResource):
 class TransactionResource(AuthorizeUserResource):
   account = fields.ForeignKey(AccountResource, 'account', full=True)
   class Meta(AuthorizeUserResource.Meta):
-    queryset = Transaction.objects.all()
+    queryset = Transaction.objects.all().order_by('-date')
     resource_name = 'transaction'
   def obj_create(self, bundle, **kwargs):
     return super(TransactionResource, self).obj_create(
