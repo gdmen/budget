@@ -11,7 +11,8 @@ class Migration(SchemaMigration):
         # Adding model 'Institution'
         db.create_table(u'api_institution', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('organization', self.gf('django.db.models.fields.TextField')()),
+            ('name', self.gf('django.db.models.fields.TextField')(blank=True)),
+            ('organization', self.gf('django.db.models.fields.TextField')(blank=True)),
             ('fid', self.gf('django.db.models.fields.TextField')(unique=True)),
         ))
         db.send_create_signal(u'api', ['Institution'])
@@ -32,6 +33,18 @@ class Migration(SchemaMigration):
         # Adding unique constraint on 'Account', fields ['user', 'institution', 'account_id']
         db.create_unique(u'api_account', ['user_id', 'institution_id', 'account_id'])
 
+        # Adding model 'Category'
+        db.create_table(u'api_category', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
+            ('name', self.gf('django.db.models.fields.TextField')()),
+            ('parent', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='children', null=True, to=orm['api.Category'])),
+        ))
+        db.send_create_signal(u'api', ['Category'])
+
+        # Adding unique constraint on 'Category', fields ['user', 'name']
+        db.create_unique(u'api_category', ['user_id', 'name'])
+
         # Adding model 'Transaction'
         db.create_table(u'api_transaction', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
@@ -46,6 +59,7 @@ class Migration(SchemaMigration):
             ('sic', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
             ('mcc', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
             ('checknum', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
+            ('category', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['api.Category'], null=True, blank=True)),
         ))
         db.send_create_signal(u'api', ['Transaction'])
 
@@ -57,6 +71,9 @@ class Migration(SchemaMigration):
         # Removing unique constraint on 'Transaction', fields ['user', 'account', 'fitid']
         db.delete_unique(u'api_transaction', ['user_id', 'account_id', 'fitid'])
 
+        # Removing unique constraint on 'Category', fields ['user', 'name']
+        db.delete_unique(u'api_category', ['user_id', 'name'])
+
         # Removing unique constraint on 'Account', fields ['user', 'institution', 'account_id']
         db.delete_unique(u'api_account', ['user_id', 'institution_id', 'account_id'])
 
@@ -65,6 +82,9 @@ class Migration(SchemaMigration):
 
         # Deleting model 'Account'
         db.delete_table(u'api_account')
+
+        # Deleting model 'Category'
+        db.delete_table(u'api_category')
 
         # Deleting model 'Transaction'
         db.delete_table(u'api_transaction')
@@ -82,16 +102,25 @@ class Migration(SchemaMigration):
             'type': ('django.db.models.fields.SmallIntegerField', [], {}),
             'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
         },
+        u'api.category': {
+            'Meta': {'unique_together': "(('user', 'name'),)", 'object_name': 'Category'},
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'name': ('django.db.models.fields.TextField', [], {}),
+            'parent': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'children'", 'null': 'True', 'to': u"orm['api.Category']"}),
+            'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
+        },
         u'api.institution': {
             'Meta': {'object_name': 'Institution'},
             'fid': ('django.db.models.fields.TextField', [], {'unique': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'organization': ('django.db.models.fields.TextField', [], {})
+            'name': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
+            'organization': ('django.db.models.fields.TextField', [], {'blank': 'True'})
         },
         u'api.transaction': {
             'Meta': {'unique_together': "(('user', 'account', 'fitid'),)", 'object_name': 'Transaction'},
             'account': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['api.Account']"}),
             'amount': ('django.db.models.fields.DecimalField', [], {'max_digits': '10', 'decimal_places': '2'}),
+            'category': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['api.Category']", 'null': 'True', 'blank': 'True'}),
             'checknum': ('django.db.models.fields.PositiveSmallIntegerField', [], {'null': 'True', 'blank': 'True'}),
             'date': ('django.db.models.fields.DateTimeField', [], {}),
             'fitid': ('django.db.models.fields.TextField', [], {}),

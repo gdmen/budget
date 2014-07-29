@@ -24,9 +24,18 @@ class Account(models.Model):
   class Meta:
     unique_together = (('user', 'institution', 'account_id'))
 
+class Category(models.Model):
+
+  user = models.ForeignKey(User)
+  name = models.TextField()
+  parent = models.ForeignKey('self', blank=True, null=True, related_name='children')
+
+  class Meta:
+    unique_together = (('user', 'name'))
 
 class Transaction(models.Model):
 
+  # OFX fields
   user = models.ForeignKey(User)
   account = models.ForeignKey(Account)
   fitid = models.TextField()
@@ -40,6 +49,9 @@ class Transaction(models.Model):
   # Merchant Category Code
   mcc = models.PositiveSmallIntegerField(blank=True, null=True)
   checknum = models.PositiveSmallIntegerField(blank=True, null=True)
+
+  # Other fields
+  category = models.ForeignKey(Category, blank=True, null=True)
 
   class Meta:
     unique_together = (('user', 'account', 'fitid'),)

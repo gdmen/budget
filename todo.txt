@@ -1,7 +1,8 @@
-- Automatically classify transactions
-  > ML classifier
-    @features: payee, type, memo
-  > Use previous exact matches w/ prompt for cache
-- Remove internal transfers
+- Rule system to classify transactions:
+  @features: payee
+  > Use previous substring matches w/ prompt for cache
+- Remove:
+  > internal transactions
+  > returns
 - How to handle e.g. Amazon?
   > Forward order confirmation email?
