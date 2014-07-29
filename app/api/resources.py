@@ -46,8 +46,20 @@ class AccountResource(AuthorizeUserResource):
         bundle, user=bundle.request.user)
 
 
+class CategoryResource(AuthorizeUserResource):
+
+  class Meta(AuthorizeUserResource.Meta):
+    queryset = Category.objects.all()
+    resource_name = 'category'
+
+  def obj_create(self, bundle, **kwargs):
+    return super(CategoryResource, self).obj_create(
+        bundle, user=bundle.request.user)
+
+
 class TransactionResource(AuthorizeUserResource):
   account = fields.ForeignKey(AccountResource, 'account', full=True)
+  category = fields.ForeignKey(CategoryResource, 'category', null=True, full=True)
 
   class Meta(AuthorizeUserResource.Meta):
     queryset = Transaction.objects.all().order_by('-date')

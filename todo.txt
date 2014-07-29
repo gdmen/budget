@@ -2,7 +2,7 @@
   @features: payee
   > Use previous substring matches w/ prompt for cache
 - Remove:
-  > internal transactions
+  > internal transfers
   > returns
 - How to handle e.g. Amazon?
   > Forward order confirmation email?

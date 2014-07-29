@@ -12,6 +12,7 @@ from .api.views import *
 api_router = Api(api_name='v0')
 api_router.register(InstitutionResource())
 api_router.register(AccountResource())
+api_router.register(CategoryResource())
 api_router.register(TransactionResource())
 
 urlpatterns = patterns('',
