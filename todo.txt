@@ -1,0 +1,7 @@
+- Automatically classify transactions
+  > ML classifier
+    @features: payee, type, memo
+  > Use previous exact matches w/ prompt for cache
+- Remove internal transfers
+- How to handle e.g. Amazon?
+  > Forward order confirmation email?
