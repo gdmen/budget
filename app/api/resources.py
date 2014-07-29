@@ -47,6 +47,7 @@ class AccountResource(AuthorizeUserResource):
 
 
 class CategoryResource(AuthorizeUserResource):
+  parent = fields.ForeignKey('self', blank=True, null=True, related_name='children', full=True)
 
   class Meta(AuthorizeUserResource.Meta):
     queryset = Category.objects.all()
