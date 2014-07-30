@@ -10,7 +10,8 @@ output += institutions
 
 categories_def = {
   'income': {
-    'paycheck': {}
+    'salary': {}
+    'transfers': {},
   },
   'expenses': {
     'transfers': {},
@@ -39,7 +40,7 @@ categories_def = {
     'transportation': {
       'bicycle': {},
       'public transportation': {},
-      'taxi': {}
+      'taxis': {}
     },
     'travel': {},
     'leisure': {

@@ -6,3 +6,8 @@
   > returns
 - How to handle e.g. Amazon?
   > Forward order confirmation email?
+
+
+
+###
+- Don't return user:pk from resources?

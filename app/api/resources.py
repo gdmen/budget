@@ -15,7 +15,7 @@ class UserResource(ModelResource):
 
 
 class AuthorizeUserResource(ModelResource):
-  user = fields.ForeignKey(UserResource, 'user', full=True)
+  user = fields.ForeignKey(UserResource, 'user')
 
   class Meta:
     abstract = True
