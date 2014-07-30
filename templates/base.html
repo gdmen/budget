@@ -74,14 +74,15 @@
   </script>
   <script type="text/javascript">
     // Set global variables
-    var djangoUser = false;
+    var GLOBAL = {};
+    GLOBAL.djangoUser = false;
     {% if user.is_authenticated %}
-      djangoUser = {
+      GLOBAL.djangoUser = {
         username: "{{ user.username }}",
       };
     {% endif %}
-    var categories = JSON.parse('{{ categories|safe }}');
-    console.log(categories);
+    GLOBAL.categories = JSON.parse('{{ categories|safe }}');
+    console.log(GLOBAL.categories);
   </script>
   {% block js %}
   {% endblock %}
