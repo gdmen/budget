@@ -61,14 +61,6 @@
   </footer>
   
   <script type="text/javascript" src="{% static 'bower/jquery/dist/jquery.min.js' %}"></script>
-    <script type="text/javascript">
-      var djangoUser = false;
-      {% if user.is_authenticated %}
-        djangoUser = {
-          username: "{{ user.username }}",
-        };
-      {% endif %}
-    </script>
   <script type="text/javascript" src="{% static 'bower/fastclick/lib/fastclick.js' %}"></script>
   <script type="text/javascript">
     $(function() {
@@ -79,6 +71,17 @@
       // fastclick
       FastClick.attach(document.body);
     });
+  </script>
+  <script type="text/javascript">
+    // Set global variables
+    var djangoUser = false;
+    {% if user.is_authenticated %}
+      djangoUser = {
+        username: "{{ user.username }}",
+      };
+    {% endif %}
+    var categories = JSON.parse('{{ categories|safe }}');
+    console.log(categories);
   </script>
   {% block js %}
   {% endblock %}
