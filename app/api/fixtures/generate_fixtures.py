@@ -9,12 +9,12 @@ with open('institutions.json', 'r') as f:
 output += institutions
 
 categories_def = {
+  'transfers': {},
   'income': {
-    'salary': {}
-    'transfers': {},
+    'salary': {},
+    'bonuses': {}
   },
   'expenses': {
-    'transfers': {},
     'retirement contributions': {},
     'rent': {},
     'bills': {

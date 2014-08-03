@@ -2,6 +2,7 @@ App.Router = Backbone.Marionette.AppRouter.extend({
   routes: {
     "(/)": "routeHome",
     "transactions(/)": "routeTransactions",
+    "categorize(/)": "routeCategorize",
     "*unknown": "routeUnknown"
   },
 
@@ -12,14 +13,17 @@ App.Router = Backbone.Marionette.AppRouter.extend({
 
   routeTransactions: function () {
     console.log("TRANSACTIONS");
-    var test = new App.Models.TransactionList([
-      { amount: 1 }, { amount: 2 }, { amount: 5 }
-    ]);
-    test = new App.Models.TransactionList()
-    test.fetch();
+    transactions = new App.Models.TransactionList();
+    transactions.fetch();
     var view = new App.Views.TransactionList({
-      collection: test
+      collection: transactions
     });
+    App.regionContent.show(view);
+  },
+
+  routeCategorize: function () {
+    console.log("CATEGORIZE");
+    var view = new App.Views.CategorizeTransactions();
     App.regionContent.show(view);
   },
 

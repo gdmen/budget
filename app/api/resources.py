@@ -8,14 +8,14 @@ from .models import *
 class UserResource(ModelResource):
   class Meta:
     queryset = User.objects.all()
-    excludes = ['id', 'is_active', 'resource_uri', 'first_name', 'last_name',
-                'email', 'password', 'is_superuser']
+    excludes = ['id', 'is_active', 'is_staff', 'last_login', 'date_joined',
+                'first_name', 'last_name', 'email', 'password', 'is_superuser'
+                'username']
     authentication = SessionAuthentication()
     authorization = DjangoAuthorization()
 
 
 class AuthorizeUserResource(ModelResource):
-  user = fields.ForeignKey(UserResource, 'user')
 
   class Meta:
     abstract = True
@@ -25,6 +25,10 @@ class AuthorizeUserResource(ModelResource):
 
   def apply_authorization_limits(self, request, object_list):
     return object_list.filter(user=request.user)
+
+
+class IncludeUserResource(AuthorizeUserResource):
+  user = fields.ForeignKey(UserResource, 'user')
 
 
 class InstitutionResource(ModelResource):
@@ -47,7 +51,7 @@ class AccountResource(AuthorizeUserResource):
 
 
 class CategoryResource(AuthorizeUserResource):
-  parent = fields.ForeignKey('self', 'parent', full=True)
+  parent = fields.ForeignKey('self', 'parent', null=True, full=True)
 
   class Meta(AuthorizeUserResource.Meta):
     queryset = Category.objects.all()
@@ -63,8 +67,11 @@ class TransactionResource(AuthorizeUserResource):
   category = fields.ForeignKey(CategoryResource, 'category', null=True, full=True)
 
   class Meta(AuthorizeUserResource.Meta):
-    queryset = Transaction.objects.all().order_by('-date')
+    queryset = Transaction.objects.all().order_by('date')
     resource_name = 'transaction'
+    filtering = {
+      "category": ('exact',),
+    }
 
   def obj_create(self, bundle, **kwargs):
     return super(TransactionResource, self).obj_create(

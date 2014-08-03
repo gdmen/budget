@@ -18,7 +18,7 @@ def generate_category_tree(element):
 
 def Index(request):
   categories = [(c, c.children) for c in Category.objects.filter(parent=None)]
-  category_tree = generate_category_tree(categories[0])
+  category_tree = [generate_category_tree(c) for c in categories]
 
   return render(request, 'index.html',
                 dictionary={'categories': json.dumps(category_tree)})
