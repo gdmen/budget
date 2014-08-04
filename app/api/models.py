@@ -24,6 +24,7 @@ class Account(models.Model):
   class Meta:
     unique_together = (('user', 'institution', 'account_id'))
 
+
 class Category(models.Model):
 
   user = models.ForeignKey(User)
@@ -33,10 +34,10 @@ class Category(models.Model):
   class Meta:
     unique_together = (('user', 'name'))
 
+
 class Transaction(models.Model):
 
   # OFX fields
-  user = models.ForeignKey(User)
   account = models.ForeignKey(Account)
   fitid = models.TextField()
   payee = models.TextField(blank=True)
@@ -51,7 +52,15 @@ class Transaction(models.Model):
   checknum = models.PositiveSmallIntegerField(blank=True, null=True)
 
   # Other fields
+  user = models.ForeignKey(User)
   category = models.ForeignKey(Category, blank=True, null=True)
 
   class Meta:
     unique_together = (('user', 'account', 'fitid'),)
+
+
+class CategoryRule(models.Model):
+  
+  user = models.ForeignKey(User)
+  category = models.ForeignKey(Category)
+  csv_search_terms = models.TextField()

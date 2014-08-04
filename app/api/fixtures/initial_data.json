@@ -2973,7 +2973,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "toiletries"
+      "name": "transportation"
     },
     "model": "api.Category",
     "pk": 3
@@ -2982,7 +2982,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "transportation"
+      "name": "food"
     },
     "model": "api.Category",
     "pk": 4
@@ -2991,7 +2991,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "food"
+      "name": "leisure"
     },
     "model": "api.Category",
     "pk": 5
@@ -3000,7 +3000,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "leisure"
+      "name": "gadgets"
     },
     "model": "api.Category",
     "pk": 6
@@ -3009,7 +3009,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "gifts"
+      "name": "rent"
     },
     "model": "api.Category",
     "pk": 7
@@ -3018,7 +3018,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "rent"
+      "name": "charity"
     },
     "model": "api.Category",
     "pk": 8
@@ -3027,7 +3027,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "charity"
+      "name": "gifts"
     },
     "model": "api.Category",
     "pk": 9
@@ -3090,7 +3090,7 @@
     "fields": {
       "user": 0,
       "parent": 1,
-      "name": "clothes"
+      "name": "toiletries"
     },
     "model": "api.Category",
     "pk": 16
@@ -3098,8 +3098,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 2,
-      "name": "salary"
+      "parent": 1,
+      "name": "clothes"
     },
     "model": "api.Category",
     "pk": 17
@@ -3108,7 +3108,7 @@
     "fields": {
       "user": 0,
       "parent": 2,
-      "name": "bonuses"
+      "name": "salary"
     },
     "model": "api.Category",
     "pk": 18
@@ -3116,8 +3116,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 4,
-      "name": "public transportation"
+      "parent": 2,
+      "name": "bonuses"
     },
     "model": "api.Category",
     "pk": 19
@@ -3125,8 +3125,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 4,
-      "name": "bicycle"
+      "parent": 3,
+      "name": "public transportation"
     },
     "model": "api.Category",
     "pk": 20
@@ -3134,8 +3134,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 4,
-      "name": "taxis"
+      "parent": 3,
+      "name": "bicycle"
     },
     "model": "api.Category",
     "pk": 21
@@ -3143,8 +3143,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "restaurants"
+      "parent": 3,
+      "name": "taxis"
     },
     "model": "api.Category",
     "pk": 22
@@ -3152,8 +3152,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "groceries"
+      "parent": 4,
+      "name": "restaurants"
     },
     "model": "api.Category",
     "pk": 23
@@ -3161,8 +3161,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "fast food"
+      "parent": 4,
+      "name": "groceries"
     },
     "model": "api.Category",
     "pk": 24
@@ -3170,8 +3170,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 6,
-      "name": "movies"
+      "parent": 4,
+      "name": "fast food"
     },
     "model": "api.Category",
     "pk": 25
@@ -3179,8 +3179,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 6,
-      "name": "books"
+      "parent": 5,
+      "name": "movies"
     },
     "model": "api.Category",
     "pk": 26
@@ -3188,8 +3188,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 6,
-      "name": "music"
+      "parent": 5,
+      "name": "books"
     },
     "model": "api.Category",
     "pk": 27
@@ -3197,8 +3197,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 6,
-      "name": "events"
+      "parent": 5,
+      "name": "music"
     },
     "model": "api.Category",
     "pk": 28
@@ -3206,8 +3206,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 13,
-      "name": "gym"
+      "parent": 5,
+      "name": "events"
     },
     "model": "api.Category",
     "pk": 29
@@ -3216,7 +3216,7 @@
     "fields": {
       "user": 0,
       "parent": 13,
-      "name": "supplements"
+      "name": "gym"
     },
     "model": "api.Category",
     "pk": 30
@@ -3225,10 +3225,19 @@
     "fields": {
       "user": 0,
       "parent": 13,
-      "name": "bjj"
+      "name": "supplements"
     },
     "model": "api.Category",
     "pk": 31
+  },
+  {
+    "fields": {
+      "user": 0,
+      "parent": 13,
+      "name": "bjj"
+    },
+    "model": "api.Category",
+    "pk": 32
   },
   {
     "fields": {
@@ -3237,24 +3246,87 @@
       "name": "phone"
     },
     "model": "api.Category",
-    "pk": 32
-  },
-  {
-    "fields": {
-      "user": 0,
-      "parent": 31,
-      "name": "bjj training"
-    },
-    "model": "api.Category",
     "pk": 33
   },
   {
     "fields": {
       "user": 0,
-      "parent": 31,
-      "name": "bjj tournaments"
+      "parent": 32,
+      "name": "bjj training"
     },
     "model": "api.Category",
     "pk": 34
+  },
+  {
+    "fields": {
+      "user": 0,
+      "parent": 32,
+      "name": "bjj tournaments"
+    },
+    "model": "api.Category",
+    "pk": 35
+  },
+  {
+    "fields": {
+      "category": 16,
+      "user": 0,
+      "csv_search_rules": "WALGREENS"
+    },
+    "model": "api.CategoryRule",
+    "pk": 0
+  },
+  {
+    "fields": {
+      "category": 25,
+      "user": 0,
+      "csv_search_rules": "SUBWAY, WENDY'S, LE BOULANGER, DOMINO'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN'S, PIZZA HUT"
+    },
+    "model": "api.CategoryRule",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "category": 15,
+      "user": 0,
+      "csv_search_rules": "GOOGLE *UBER, CALTRAIN TVM"
+    },
+    "model": "api.CategoryRule",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "category": 33,
+      "user": 0,
+      "csv_search_rules": "VESTA *T-MOBILE"
+    },
+    "model": "api.CategoryRule",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "category": 6,
+      "user": 0,
+      "csv_search_rules": "GOOGLE *Devices"
+    },
+    "model": "api.CategoryRule",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "category": 5,
+      "user": 0,
+      "csv_search_rules": "GOOGLE *Music"
+    },
+    "model": "api.CategoryRule",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "category": 24,
+      "user": 0,
+      "csv_search_rules": "LUCKY, SAVE N GO MARKET"
+    },
+    "model": "api.CategoryRule",
+    "pk": 6
   }
 ]

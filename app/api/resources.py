@@ -6,6 +6,7 @@ from .models import *
 
 
 class UserResource(ModelResource):
+
   class Meta:
     queryset = User.objects.all()
     excludes = ['id', 'is_active', 'is_staff', 'last_login', 'date_joined',
@@ -28,6 +29,7 @@ class AuthorizeUserResource(ModelResource):
 
 
 class IncludeUserResource(AuthorizeUserResource):
+
   user = fields.ForeignKey(UserResource, 'user')
 
 
@@ -39,6 +41,7 @@ class InstitutionResource(ModelResource):
 
 
 class AccountResource(AuthorizeUserResource):
+
   institution = fields.ForeignKey(InstitutionResource, 'institution', full=True)
 
   class Meta(AuthorizeUserResource.Meta):
@@ -63,6 +66,7 @@ class CategoryResource(AuthorizeUserResource):
 
 
 class TransactionResource(AuthorizeUserResource):
+
   account = fields.ForeignKey(AccountResource, 'account', full=True)
   category = fields.ForeignKey(CategoryResource, 'category', null=True, full=True)
 
@@ -75,4 +79,17 @@ class TransactionResource(AuthorizeUserResource):
 
   def obj_create(self, bundle, **kwargs):
     return super(TransactionResource, self).obj_create(
+        bundle, user=bundle.request.user)
+
+
+class CategoryRuleResource(AuthorizeUserResource):
+
+  category = fields.ForeignKey(CategoryResource, 'category', null=True, full=True)
+
+  class Meta(AuthorizeUserResource.Meta):
+    queryset = CategoryRule.objects.all()
+    resource_name = 'category_rule'
+
+  def obj_create(self, bundle, **kwargs):
+    return super(CategoryRuleResource, self).obj_create(
         bundle, user=bundle.request.user)
