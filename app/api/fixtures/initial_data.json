@@ -3269,8 +3269,8 @@
   {
     "fields": {
       "category": 16,
-      "user": 0,
-      "csv_search_rules": "WALGREENS"
+      "csv_search_terms": "WALGREENS",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 0
@@ -3278,8 +3278,8 @@
   {
     "fields": {
       "category": 25,
-      "user": 0,
-      "csv_search_rules": "SUBWAY, WENDY'S, LE BOULANGER, DOMINO'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN'S, PIZZA HUT"
+      "csv_search_terms": "SUBWAY, WENDY'S, LE BOULANGER, DOMINO'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN'S, PIZZA HUT",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 1
@@ -3287,8 +3287,8 @@
   {
     "fields": {
       "category": 15,
-      "user": 0,
-      "csv_search_rules": "GOOGLE *UBER, CALTRAIN TVM"
+      "csv_search_terms": "GOOGLE *UBER, CALTRAIN TVM",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 2
@@ -3296,8 +3296,8 @@
   {
     "fields": {
       "category": 33,
-      "user": 0,
-      "csv_search_rules": "VESTA *T-MOBILE"
+      "csv_search_terms": "VESTA *T-MOBILE",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 3
@@ -3305,8 +3305,8 @@
   {
     "fields": {
       "category": 6,
-      "user": 0,
-      "csv_search_rules": "GOOGLE *Devices"
+      "csv_search_terms": "GOOGLE *Devices",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 4
@@ -3314,8 +3314,8 @@
   {
     "fields": {
       "category": 5,
-      "user": 0,
-      "csv_search_rules": "GOOGLE *Music"
+      "csv_search_terms": "GOOGLE *Music",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 5
@@ -3323,8 +3323,8 @@
   {
     "fields": {
       "category": 24,
-      "user": 0,
-      "csv_search_rules": "LUCKY, SAVE N GO MARKET"
+      "csv_search_terms": "LUCKY, SAVE N GO MARKET",
+      "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 6

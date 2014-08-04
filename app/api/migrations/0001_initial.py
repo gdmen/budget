@@ -48,7 +48,6 @@ class Migration(SchemaMigration):
         # Adding model 'Transaction'
         db.create_table(u'api_transaction', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
             ('account', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['api.Account'])),
             ('fitid', self.gf('django.db.models.fields.TextField')()),
             ('payee', self.gf('django.db.models.fields.TextField')(blank=True)),
@@ -59,12 +58,22 @@ class Migration(SchemaMigration):
             ('sic', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
             ('mcc', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
             ('checknum', self.gf('django.db.models.fields.PositiveSmallIntegerField')(null=True, blank=True)),
+            ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
             ('category', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['api.Category'], null=True, blank=True)),
         ))
         db.send_create_signal(u'api', ['Transaction'])
 
         # Adding unique constraint on 'Transaction', fields ['user', 'account', 'fitid']
         db.create_unique(u'api_transaction', ['user_id', 'account_id', 'fitid'])
+
+        # Adding model 'CategoryRule'
+        db.create_table(u'api_categoryrule', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
+            ('category', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['api.Category'])),
+            ('csv_search_terms', self.gf('django.db.models.fields.TextField')()),
+        ))
+        db.send_create_signal(u'api', ['CategoryRule'])
 
 
     def backwards(self, orm):
@@ -89,6 +98,9 @@ class Migration(SchemaMigration):
         # Deleting model 'Transaction'
         db.delete_table(u'api_transaction')
 
+        # Deleting model 'CategoryRule'
+        db.delete_table(u'api_categoryrule')
+
 
     models = {
         u'api.account': {
@@ -107,6 +119,13 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.TextField', [], {}),
             'parent': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'children'", 'null': 'True', 'to': u"orm['api.Category']"}),
+            'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
+        },
+        u'api.categoryrule': {
+            'Meta': {'object_name': 'CategoryRule'},
+            'category': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['api.Category']"}),
+            'csv_search_terms': ('django.db.models.fields.TextField', [], {}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
         },
         u'api.institution': {

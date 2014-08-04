@@ -121,7 +121,7 @@ for rule in category_rules_def:
     'fields': {
       'user': 0,
       'category': _category_lookup[rule['category']],
-      'csv_search_rules': rule['csv_search_terms']
+      'csv_search_terms': rule['csv_search_terms']
     },
     'model': 'api.CategoryRule',
     'pk': pk
