@@ -32,4 +32,6 @@ def ImportFile(request):
       return HttpResponseRedirect('/import/')
   else:
     form = UploadFileForm()
-  return render(request, 'import.html', dictionary={'form': form})
+  return render(request, 'import.html', dictionary={
+      'form': form, 'categories': '[]'
+  })
