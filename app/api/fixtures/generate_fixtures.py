@@ -86,35 +86,35 @@ output += categories
 
 category_rules_def = [
   {
-    'csv_search_terms': 'WALGREENS',
+    'terms': 'WALGREENS',
     'category': 'toiletries'
   },
   {
-    'csv_search_terms': 'MCDONALDS, SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
+    'terms': 'MCDONALDS, SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
     'category': 'fast food'
   },
   {
-    'csv_search_terms': 'GOOGLE *UBER',
+    'terms': 'GOOGLE *UBER',
     'category': 'taxis'
   },
   {
-    'csv_search_terms': 'CALTRAIN TVM',
+    'terms': 'CALTRAIN TVM',
     'category': 'public transportation'
   },
   {
-    'csv_search_terms': 'VESTA *T-MOBILE',
+    'terms': 'VESTA *T-MOBILE',
     'category': 'phone'
   },
   {
-    'csv_search_terms': 'GOOGLE *Devices',
+    'terms': 'GOOGLE *Devices',
     'category': 'gadgets'
   },
   {
-    'csv_search_terms': 'GOOGLE *Music',
+    'terms': 'GOOGLE *Music',
     'category': 'leisure'
   },
   {
-    'csv_search_terms': 'LUCKY, SAVE N GO MARKET',
+    'terms': 'LUCKY, SAVE N GO MARKET',
     'category': 'groceries'
   }
 ]
@@ -122,16 +122,17 @@ category_rules_def = [
 pk = 0
 category_rules = []
 for rule in category_rules_def:
-  category_rules.append({
-    'fields': {
-      'user': 0,
-      'category': _category_lookup[rule['category']],
-      'csv_search_terms': rule['csv_search_terms']
-    },
-    'model': 'api.CategoryRule',
-    'pk': pk
-  })
-  pk += 1
+  for term in rule['terms'].split(','):
+    category_rules.append({
+      'fields': {
+        'user': 0,
+        'category': _category_lookup[rule['category']],
+        'term': term.strip()
+      },
+      'model': 'api.CategoryRule',
+      'pk': pk
+    })
+    pk += 1
 
 output += category_rules
 

@@ -1,11 +1,15 @@
 - Rule system to classify transactions:
   @features: payee
   > Use previous substring matches w/ prompt for cache
+  > Add regex support
+  > Add priority ordering of rule application
 - Remove:
   > internal transfers
   > returns
 - How to handle e.g. Amazon?
   > Forward order confirmation email?
+
+
 
 
 

@@ -3278,7 +3278,7 @@
   {
     "fields": {
       "category": 16,
-      "csv_search_terms": "WALGREENS",
+      "term": "WALGREENS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3287,7 +3287,7 @@
   {
     "fields": {
       "category": 26,
-      "csv_search_terms": "MCDONALDS, SUBWAY, WENDY'S, LE BOULANGER, DOMINO'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN'S, PIZZA HUT",
+      "term": "MCDONALDS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3295,8 +3295,8 @@
   },
   {
     "fields": {
-      "category": 23,
-      "csv_search_terms": "GOOGLE *UBER",
+      "category": 26,
+      "term": "SUBWAY",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3304,8 +3304,8 @@
   },
   {
     "fields": {
-      "category": 21,
-      "csv_search_terms": "CALTRAIN TVM",
+      "category": 26,
+      "term": "WENDY'S",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3313,8 +3313,8 @@
   },
   {
     "fields": {
-      "category": 34,
-      "csv_search_terms": "VESTA *T-MOBILE",
+      "category": 26,
+      "term": "LE BOULANGER",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3322,8 +3322,8 @@
   },
   {
     "fields": {
-      "category": 6,
-      "csv_search_terms": "GOOGLE *Devices",
+      "category": 26,
+      "term": "DOMINO'S",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3331,8 +3331,8 @@
   },
   {
     "fields": {
-      "category": 5,
-      "csv_search_terms": "GOOGLE *Music",
+      "category": 26,
+      "term": "EAT CLUB",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3340,11 +3340,119 @@
   },
   {
     "fields": {
-      "category": 25,
-      "csv_search_terms": "LUCKY, SAVE N GO MARKET",
+      "category": 26,
+      "term": "FIVE GUYS",
       "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 7
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "CHIPOTLE",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "STARBUCKS",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "7-ELEVEN",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 10
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "PAPA JOHN'S",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 11
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "PIZZA HUT",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 12
+  },
+  {
+    "fields": {
+      "category": 23,
+      "term": "GOOGLE *UBER",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 13
+  },
+  {
+    "fields": {
+      "category": 21,
+      "term": "CALTRAIN TVM",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 14
+  },
+  {
+    "fields": {
+      "category": 34,
+      "term": "VESTA *T-MOBILE",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 15
+  },
+  {
+    "fields": {
+      "category": 6,
+      "term": "GOOGLE *Devices",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 16
+  },
+  {
+    "fields": {
+      "category": 5,
+      "term": "GOOGLE *Music",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 17
+  },
+  {
+    "fields": {
+      "category": 25,
+      "term": "LUCKY",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 18
+  },
+  {
+    "fields": {
+      "category": 25,
+      "term": "SAVE N GO MARKET",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 19
   }
 ]

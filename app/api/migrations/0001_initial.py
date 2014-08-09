@@ -71,12 +71,18 @@ class Migration(SchemaMigration):
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
             ('category', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['api.Category'])),
-            ('csv_search_terms', self.gf('django.db.models.fields.TextField')()),
+            ('term', self.gf('django.db.models.fields.TextField')()),
         ))
         db.send_create_signal(u'api', ['CategoryRule'])
 
+        # Adding unique constraint on 'CategoryRule', fields ['user', 'category', 'term']
+        db.create_unique(u'api_categoryrule', ['user_id', 'category_id', 'term'])
+
 
     def backwards(self, orm):
+        # Removing unique constraint on 'CategoryRule', fields ['user', 'category', 'term']
+        db.delete_unique(u'api_categoryrule', ['user_id', 'category_id', 'term'])
+
         # Removing unique constraint on 'Transaction', fields ['user', 'account', 'fitid']
         db.delete_unique(u'api_transaction', ['user_id', 'account_id', 'fitid'])
 
@@ -122,10 +128,10 @@ class Migration(SchemaMigration):
             'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
         },
         u'api.categoryrule': {
-            'Meta': {'object_name': 'CategoryRule'},
+            'Meta': {'unique_together': "(('user', 'category', 'term'),)", 'object_name': 'CategoryRule'},
             'category': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['api.Category']"}),
-            'csv_search_terms': ('django.db.models.fields.TextField', [], {}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'term': ('django.db.models.fields.TextField', [], {}),
             'user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"})
         },
         u'api.institution': {
