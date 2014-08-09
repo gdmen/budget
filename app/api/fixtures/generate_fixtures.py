@@ -12,7 +12,8 @@ categories_def = {
   'transfers': {},
   'income': {
     'salary': {},
-    'bonuses': {}
+    'bonuses': {},
+    'tax refunds': {}
   },
   'expenses': {
     'retirement contributions': {},
@@ -89,12 +90,16 @@ category_rules_def = [
     'category': 'toiletries'
   },
   {
-    'csv_search_terms': 'SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
+    'csv_search_terms': 'MCDONALDS, SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
     'category': 'fast food'
   },
   {
-    'csv_search_terms': 'GOOGLE *UBER, CALTRAIN TVM',
-    'category': 'travel'
+    'csv_search_terms': 'GOOGLE *UBER',
+    'category': 'taxis'
+  },
+  {
+    'csv_search_terms': 'CALTRAIN TVM',
+    'category': 'public transportation'
   },
   {
     'csv_search_terms': 'VESTA *T-MOBILE',

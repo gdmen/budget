@@ -7,6 +7,8 @@ from .models import *
 def handle_uploaded_file(f, user):
   ofx = OfxParser.parse(f)
 
+  categoryRules = CategoryRule.objects.all()
+
   for ofxAccount in ofx.accounts:
     # Create Institution
     institution = Institution.objects.get(
@@ -25,16 +27,25 @@ def handle_uploaded_file(f, user):
 
     # Create Transactions
     for ofxTransaction in ofxAccount.statement.transactions:
+      payee = ofxTransaction.payee
+      category = None
+      for rule in categoryRules:
+        terms = [ t.encode('ascii','replace').strip() for t in rule.csv_search_terms.split(',') ]
+        for term in terms:
+          if term in payee:
+            category = rule.category
+            break
       Transaction.objects.get_or_create(
         user = user,
         account = account,
         fitid = ofxTransaction.id,
-        payee = ofxTransaction.payee,
+        payee = payee,
         type = ofxTransaction.type,
         date = ofxTransaction.date.replace(tzinfo=pytz.UTC),
         amount = ofxTransaction.amount,
         memo = ofxTransaction.memo,
         sic = ofxTransaction.sic or None,
         mcc = ofxTransaction.mcc or None,
-        checknum = ofxTransaction.checknum or None
+        checknum = ofxTransaction.checknum or None,
+        category = category
       )

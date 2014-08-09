@@ -64,3 +64,6 @@ class CategoryRule(models.Model):
   user = models.ForeignKey(User)
   category = models.ForeignKey(Category)
   csv_search_terms = models.TextField()
+
+  class Meta:
+    unique_together = (('user', 'category', 'csv_search_terms'),)
