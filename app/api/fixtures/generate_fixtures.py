@@ -10,6 +10,7 @@ output += institutions
 
 categories_def = {
   'transfers': {},
+  'returns': {},
   'income': {
     'salary': {},
     'bonuses': {},
@@ -86,6 +87,10 @@ output += categories
 
 category_rules_def = [
   {
+    'terms': 'PAYROLL',
+    'category': 'salary'
+  },
+  {
     'terms': 'WALGREENS',
     'category': 'toiletries'
   },
@@ -102,7 +107,7 @@ category_rules_def = [
     'category': 'public transportation'
   },
   {
-    'terms': 'VESTA *T-MOBILE',
+    'terms': 'T-MOBILE',
     'category': 'phone'
   },
   {

@@ -2955,7 +2955,7 @@
     "fields": {
       "user": 0,
       "parent": null,
-      "name": "expenses"
+      "name": "returns"
     },
     "model": "api.Category",
     "pk": 1
@@ -2964,7 +2964,7 @@
     "fields": {
       "user": 0,
       "parent": null,
-      "name": "income"
+      "name": "expenses"
     },
     "model": "api.Category",
     "pk": 2
@@ -2972,8 +2972,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "transportation"
+      "parent": null,
+      "name": "income"
     },
     "model": "api.Category",
     "pk": 3
@@ -2981,8 +2981,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "food"
+      "parent": 2,
+      "name": "transportation"
     },
     "model": "api.Category",
     "pk": 4
@@ -2990,8 +2990,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "leisure"
+      "parent": 2,
+      "name": "food"
     },
     "model": "api.Category",
     "pk": 5
@@ -2999,8 +2999,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "gadgets"
+      "parent": 2,
+      "name": "leisure"
     },
     "model": "api.Category",
     "pk": 6
@@ -3008,8 +3008,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "rent"
+      "parent": 2,
+      "name": "gadgets"
     },
     "model": "api.Category",
     "pk": 7
@@ -3017,8 +3017,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "charity"
+      "parent": 2,
+      "name": "rent"
     },
     "model": "api.Category",
     "pk": 8
@@ -3026,8 +3026,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "gifts"
+      "parent": 2,
+      "name": "charity"
     },
     "model": "api.Category",
     "pk": 9
@@ -3035,8 +3035,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "retirement contributions"
+      "parent": 2,
+      "name": "gifts"
     },
     "model": "api.Category",
     "pk": 10
@@ -3044,8 +3044,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "medical"
+      "parent": 2,
+      "name": "retirement contributions"
     },
     "model": "api.Category",
     "pk": 11
@@ -3053,8 +3053,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "household items"
+      "parent": 2,
+      "name": "medical"
     },
     "model": "api.Category",
     "pk": 12
@@ -3062,8 +3062,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "fitness"
+      "parent": 2,
+      "name": "household items"
     },
     "model": "api.Category",
     "pk": 13
@@ -3071,8 +3071,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "bills"
+      "parent": 2,
+      "name": "fitness"
     },
     "model": "api.Category",
     "pk": 14
@@ -3080,8 +3080,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "travel"
+      "parent": 2,
+      "name": "bills"
     },
     "model": "api.Category",
     "pk": 15
@@ -3089,8 +3089,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "toiletries"
+      "parent": 2,
+      "name": "travel"
     },
     "model": "api.Category",
     "pk": 16
@@ -3098,8 +3098,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 1,
-      "name": "clothes"
+      "parent": 2,
+      "name": "toiletries"
     },
     "model": "api.Category",
     "pk": 17
@@ -3108,7 +3108,7 @@
     "fields": {
       "user": 0,
       "parent": 2,
-      "name": "salary"
+      "name": "clothes"
     },
     "model": "api.Category",
     "pk": 18
@@ -3116,8 +3116,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 2,
-      "name": "bonuses"
+      "parent": 3,
+      "name": "salary"
     },
     "model": "api.Category",
     "pk": 19
@@ -3125,8 +3125,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 2,
-      "name": "tax refunds"
+      "parent": 3,
+      "name": "bonuses"
     },
     "model": "api.Category",
     "pk": 20
@@ -3135,7 +3135,7 @@
     "fields": {
       "user": 0,
       "parent": 3,
-      "name": "public transportation"
+      "name": "tax refunds"
     },
     "model": "api.Category",
     "pk": 21
@@ -3143,8 +3143,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 3,
-      "name": "bicycle"
+      "parent": 4,
+      "name": "public transportation"
     },
     "model": "api.Category",
     "pk": 22
@@ -3152,8 +3152,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 3,
-      "name": "taxis"
+      "parent": 4,
+      "name": "bicycle"
     },
     "model": "api.Category",
     "pk": 23
@@ -3162,7 +3162,7 @@
     "fields": {
       "user": 0,
       "parent": 4,
-      "name": "restaurants"
+      "name": "taxis"
     },
     "model": "api.Category",
     "pk": 24
@@ -3170,8 +3170,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 4,
-      "name": "groceries"
+      "parent": 5,
+      "name": "restaurants"
     },
     "model": "api.Category",
     "pk": 25
@@ -3179,8 +3179,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 4,
-      "name": "fast food"
+      "parent": 5,
+      "name": "groceries"
     },
     "model": "api.Category",
     "pk": 26
@@ -3189,7 +3189,7 @@
     "fields": {
       "user": 0,
       "parent": 5,
-      "name": "movies"
+      "name": "fast food"
     },
     "model": "api.Category",
     "pk": 27
@@ -3197,8 +3197,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "books"
+      "parent": 6,
+      "name": "movies"
     },
     "model": "api.Category",
     "pk": 28
@@ -3206,8 +3206,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "music"
+      "parent": 6,
+      "name": "books"
     },
     "model": "api.Category",
     "pk": 29
@@ -3215,8 +3215,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 5,
-      "name": "events"
+      "parent": 6,
+      "name": "music"
     },
     "model": "api.Category",
     "pk": 30
@@ -3224,8 +3224,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 13,
-      "name": "gym"
+      "parent": 6,
+      "name": "events"
     },
     "model": "api.Category",
     "pk": 31
@@ -3233,8 +3233,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 13,
-      "name": "supplements"
+      "parent": 14,
+      "name": "gym"
     },
     "model": "api.Category",
     "pk": 32
@@ -3242,8 +3242,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 13,
-      "name": "bjj"
+      "parent": 14,
+      "name": "supplements"
     },
     "model": "api.Category",
     "pk": 33
@@ -3252,7 +3252,7 @@
     "fields": {
       "user": 0,
       "parent": 14,
-      "name": "phone"
+      "name": "bjj"
     },
     "model": "api.Category",
     "pk": 34
@@ -3260,8 +3260,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 33,
-      "name": "bjj training"
+      "parent": 15,
+      "name": "phone"
     },
     "model": "api.Category",
     "pk": 35
@@ -3269,16 +3269,25 @@
   {
     "fields": {
       "user": 0,
-      "parent": 33,
-      "name": "bjj tournaments"
+      "parent": 34,
+      "name": "bjj training"
     },
     "model": "api.Category",
     "pk": 36
   },
   {
     "fields": {
-      "category": 16,
-      "term": "WALGREENS",
+      "user": 0,
+      "parent": 34,
+      "name": "bjj tournaments"
+    },
+    "model": "api.Category",
+    "pk": 37
+  },
+  {
+    "fields": {
+      "category": 19,
+      "term": "PAYROLL",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3286,8 +3295,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "MCDONALDS",
+      "category": 17,
+      "term": "WALGREENS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3295,8 +3304,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "SUBWAY",
+      "category": 27,
+      "term": "MCDONALDS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3304,8 +3313,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "WENDY'S",
+      "category": 27,
+      "term": "SUBWAY",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3313,8 +3322,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "LE BOULANGER",
+      "category": 27,
+      "term": "WENDY'S",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3322,8 +3331,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "DOMINO'S",
+      "category": 27,
+      "term": "LE BOULANGER",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3331,8 +3340,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "EAT CLUB",
+      "category": 27,
+      "term": "DOMINO'S",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3340,8 +3349,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "FIVE GUYS",
+      "category": 27,
+      "term": "EAT CLUB",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3349,8 +3358,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "CHIPOTLE",
+      "category": 27,
+      "term": "FIVE GUYS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3358,8 +3367,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "STARBUCKS",
+      "category": 27,
+      "term": "CHIPOTLE",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3367,8 +3376,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "7-ELEVEN",
+      "category": 27,
+      "term": "STARBUCKS",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3376,8 +3385,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "PAPA JOHN'S",
+      "category": 27,
+      "term": "7-ELEVEN",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3385,8 +3394,8 @@
   },
   {
     "fields": {
-      "category": 26,
-      "term": "PIZZA HUT",
+      "category": 27,
+      "term": "PAPA JOHN'S",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3394,8 +3403,8 @@
   },
   {
     "fields": {
-      "category": 23,
-      "term": "GOOGLE *UBER",
+      "category": 27,
+      "term": "PIZZA HUT",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3403,8 +3412,8 @@
   },
   {
     "fields": {
-      "category": 21,
-      "term": "CALTRAIN TVM",
+      "category": 24,
+      "term": "GOOGLE *UBER",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3412,8 +3421,8 @@
   },
   {
     "fields": {
-      "category": 34,
-      "term": "VESTA *T-MOBILE",
+      "category": 22,
+      "term": "CALTRAIN TVM",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3421,8 +3430,8 @@
   },
   {
     "fields": {
-      "category": 6,
-      "term": "GOOGLE *Devices",
+      "category": 35,
+      "term": "T-MOBILE",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3430,8 +3439,8 @@
   },
   {
     "fields": {
-      "category": 5,
-      "term": "GOOGLE *Music",
+      "category": 7,
+      "term": "GOOGLE *Devices",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3439,8 +3448,8 @@
   },
   {
     "fields": {
-      "category": 25,
-      "term": "LUCKY",
+      "category": 6,
+      "term": "GOOGLE *Music",
       "user": 0
     },
     "model": "api.CategoryRule",
@@ -3448,11 +3457,20 @@
   },
   {
     "fields": {
-      "category": 25,
-      "term": "SAVE N GO MARKET",
+      "category": 26,
+      "term": "LUCKY",
       "user": 0
     },
     "model": "api.CategoryRule",
     "pk": 19
+  },
+  {
+    "fields": {
+      "category": 26,
+      "term": "SAVE N GO MARKET",
+      "user": 0
+    },
+    "model": "api.CategoryRule",
+    "pk": 20
   }
 ]

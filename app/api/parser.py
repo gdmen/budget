@@ -7,7 +7,8 @@ from .models import *
 def handle_uploaded_file(f, user):
   ofx = OfxParser.parse(f)
 
-  categoryRules = CategoryRule.objects.all()
+  CATEGORY_RULES = CategoryRule.objects.all()
+  TRANSFERS_CATEGORY = Category.objects.get(name = 'transfers')
 
   for ofxAccount in ofx.accounts:
     # Create Institution
@@ -25,22 +26,48 @@ def handle_uploaded_file(f, user):
       type = ofxAccount.type
     )
 
-    # Create Transactions
+    # Categorize and create Transactions
     for ofxTransaction in ofxAccount.statement.transactions:
-      payee = ofxTransaction.payee
+      _payee = ofxTransaction.payee
+      _amount = ofxTransaction.amount
+      _date = ofxTransaction.date.replace(tzinfo=pytz.UTC)
+      _type = ofxTransaction.type
       category = None
-      for rule in categoryRules:
-        if rule.term in payee:
+
+      # Try rules based categorization
+      for rule in CATEGORY_RULES:
+        if rule.term in _payee:
           category = rule.category
           break
+
+      # Check if this is a transfer or refund
+      if not category:
+        opposite_type = 'credit' if _type == 'debit' else 'debit'
+        try:
+          possibly_neutral = Transaction.objects.filter(
+            amount = -1 * _amount,
+            type = opposite_type
+          )
+        except Transaction.DoesNotExist:
+          pass
+        else:
+          # If there is uncertainty, don't categorize
+          if len(possibly_neutral) == 1:
+            trans = possibly_neutral.first()
+            # Transfer (within 1.5 days of each other)
+            if trans.account != account and abs(trans.date - _date).total_seconds() < 129600:
+              trans.category = TRANSFERS_CATEGORY
+              trans.save(update_fields=['category'])
+              category = TRANSFERS_CATEGORY
+
       Transaction.objects.get_or_create(
         user = user,
         account = account,
         fitid = ofxTransaction.id,
-        payee = payee,
-        type = ofxTransaction.type,
-        date = ofxTransaction.date.replace(tzinfo=pytz.UTC),
-        amount = ofxTransaction.amount,
+        payee = _payee,
+        type = _type,
+        date = _date,
+        amount = _amount,
         memo = ofxTransaction.memo,
         sic = ofxTransaction.sic or None,
         mcc = ofxTransaction.mcc or None,
