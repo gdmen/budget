@@ -43,22 +43,16 @@ def handle_uploaded_file(f, user):
       # Check if this is a transfer or refund
       if not category:
         opposite_type = 'credit' if _type == 'debit' else 'debit'
-        try:
-          possibly_neutral = Transaction.objects.filter(
-            amount = -1 * _amount,
-            type = opposite_type
-          )
-        except Transaction.DoesNotExist:
-          pass
-        else:
-          # If there is uncertainty, don't categorize
-          if len(possibly_neutral) == 1:
-            trans = possibly_neutral.first()
-            # Transfer (within 1.5 days of each other)
-            if trans.account != account and abs(trans.date - _date).total_seconds() < 129600:
-              trans.category = TRANSFERS_CATEGORY
-              trans.save(update_fields=['category'])
-              category = TRANSFERS_CATEGORY
+        possibly_neutral = Transaction.objects.filter(
+          amount = -1 * _amount,
+          type = opposite_type
+        )
+        for trans in possibly_neutral:
+          # Transfer (within 1 day of each other)
+          if trans.account != account and abs(trans.date - _date).total_seconds() <= 129600:
+            trans.category = TRANSFERS_CATEGORY
+            trans.save(update_fields=['category'])
+            category = TRANSFERS_CATEGORY
 
       Transaction.objects.get_or_create(
         user = user,

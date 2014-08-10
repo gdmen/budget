@@ -11,6 +11,7 @@ output += institutions
 categories_def = {
   'transfers': {},
   'returns': {},
+  'cash': {},
   'income': {
     'salary': {},
     'bonuses': {},
@@ -26,7 +27,8 @@ categories_def = {
     'food': {
       'groceries': {},
       'fast food': {},
-      'restaurants': {}
+      'restaurants': {},
+      'bars': {}
     },
     'fitness': {
       'bjj': {
@@ -91,6 +93,10 @@ category_rules_def = [
     'category': 'salary'
   },
   {
+    'terms': 'ATM',
+    'category': 'cash'
+  },
+  {
     'terms': 'WALGREENS',
     'category': 'toiletries'
   },
@@ -103,7 +109,7 @@ category_rules_def = [
     'category': 'taxis'
   },
   {
-    'terms': 'CALTRAIN TVM',
+    'terms': 'CALTRAIN TVM, BART',
     'category': 'public transportation'
   },
   {
