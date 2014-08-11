@@ -3304,6 +3304,15 @@
   },
   {
     "fields": {
+      "user": 0,
+      "parent": 36,
+      "name": "bjj equipment"
+    },
+    "model": "api.Category",
+    "pk": 40
+  },
+  {
+    "fields": {
       "category": 20,
       "term": "PAYROLL",
       "user": 0
