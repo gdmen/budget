@@ -3332,7 +3332,7 @@
   {
     "fields": {
       "category": 29,
-      "term": "MCDONALDS",
+      "term": "MCDONALD",
       "user": 0
     },
     "model": "api.CategoryRule",

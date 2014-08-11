@@ -101,7 +101,7 @@ category_rules_def = [
     'category': 'toiletries'
   },
   {
-    'terms': 'MCDONALDS, SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
+    'terms': 'MCDONALD, SUBWAY, WENDY\'S, LE BOULANGER, DOMINO\'S, EAT CLUB, FIVE GUYS, CHIPOTLE, STARBUCKS, 7-ELEVEN, PAPA JOHN\'S, PIZZA HUT',
     'category': 'fast food'
   },
   {
@@ -148,5 +148,5 @@ for rule in category_rules_def:
 output += category_rules
 
 
-with open('initial_data.json', 'w') as f:
+with open('initial_data.json_', 'w') as f:
   f.write(json.dumps(output, indent=2, separators=(',', ': ')))
