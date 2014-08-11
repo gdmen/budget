@@ -33,7 +33,8 @@ categories_def = {
     'fitness': {
       'bjj': {
         'bjj training': {},
-        'bjj tournaments': {}
+        'bjj tournaments': {},
+        'bjj equipment': {}
       },
       'gym': {},
       'supplements': {}
