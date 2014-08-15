@@ -58,13 +58,15 @@ def handle_uploaded_file(f, user):
         user = user,
         account = account,
         fitid = ofxTransaction.id,
-        payee = _payee,
-        type = _type,
-        date = _date,
-        amount = _amount,
-        memo = ofxTransaction.memo,
-        sic = ofxTransaction.sic or None,
-        mcc = ofxTransaction.mcc or None,
-        checknum = ofxTransaction.checknum or None,
-        category = category
+        defaults = dict(
+          payee = _payee,
+          type = _type,
+          date = _date,
+          amount = _amount,
+          memo = ofxTransaction.memo,
+          sic = ofxTransaction.sic or None,
+          mcc = ofxTransaction.mcc or None,
+          checknum = ofxTransaction.checknum or None,
+          category = category
+        )
       )

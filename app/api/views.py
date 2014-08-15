@@ -2,7 +2,6 @@ import json
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.forms.models import model_to_dict
-from .forms import UploadFileForm
 
 from .parser import handle_uploaded_file
 from .models import Category
@@ -26,13 +25,7 @@ def Index(request):
 
 def ImportFile(request):
   if request.method == 'POST':
-    form = UploadFileForm(request.POST, request.FILES)
-    if form.is_valid():
-      for f in request.FILES.getlist('files'):
-        handle_uploaded_file(f, request.user)
-      return HttpResponseRedirect('/import/')
-  else:
-    form = UploadFileForm()
-  return render(request, 'import.html', dictionary={
-      'form': form, 'categories': '[]'
-  })
+    for f in request.FILES.getlist('files'):
+      handle_uploaded_file(f, request.user)
+    return HttpResponseRedirect('/import/')
+  return render(request, 'import.html', dictionary={'categories': '[]'})
