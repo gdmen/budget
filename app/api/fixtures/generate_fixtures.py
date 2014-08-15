@@ -36,9 +36,8 @@ categories_def = {
         'bjj tournaments': {},
         'bjj equipment': {}
       },
-      'gym': {
-        'gym equipment': {}
-      },
+      'gym fees': {},
+      'equipment': {},
       'supplements': {},
     },
     'medical': {},

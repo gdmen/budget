@@ -3252,7 +3252,7 @@
     "fields": {
       "user": 0,
       "parent": 15,
-      "name": "gym"
+      "name": "equipment"
     },
     "model": "api.Category",
     "pk": 34
@@ -3270,10 +3270,19 @@
     "fields": {
       "user": 0,
       "parent": 15,
-      "name": "bjj"
+      "name": "gym fees"
     },
     "model": "api.Category",
     "pk": 36
+  },
+  {
+    "fields": {
+      "user": 0,
+      "parent": 15,
+      "name": "bjj"
+    },
+    "model": "api.Category",
+    "pk": 37
   },
   {
     "fields": {
@@ -3282,22 +3291,13 @@
       "name": "phone"
     },
     "model": "api.Category",
-    "pk": 37
-  },
-  {
-    "fields": {
-      "user": 0,
-      "parent": 36,
-      "name": "bjj training"
-    },
-    "model": "api.Category",
     "pk": 38
   },
   {
     "fields": {
       "user": 0,
-      "parent": 36,
-      "name": "bjj tournaments"
+      "parent": 37,
+      "name": "bjj training"
     },
     "model": "api.Category",
     "pk": 39
@@ -3305,8 +3305,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 36,
-      "name": "bjj equipment"
+      "parent": 37,
+      "name": "bjj tournaments"
     },
     "model": "api.Category",
     "pk": 40
@@ -3314,8 +3314,8 @@
   {
     "fields": {
       "user": 0,
-      "parent": 34,
-      "name": "gym equipment"
+      "parent": 37,
+      "name": "bjj equipment"
     },
     "model": "api.Category",
     "pk": 41
@@ -3484,7 +3484,7 @@
   },
   {
     "fields": {
-      "category": 37,
+      "category": 38,
       "term": "T-MOBILE",
       "user": 0
     },
