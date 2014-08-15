@@ -2,6 +2,6 @@ from django import forms
 
 
 class UploadFileForm(forms.Form):
-  file  = forms.FileField(
-    label="Select a file"
+  files  = forms.FileField(
+    label="Select files"
   )

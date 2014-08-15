@@ -28,7 +28,8 @@ def ImportFile(request):
   if request.method == 'POST':
     form = UploadFileForm(request.POST, request.FILES)
     if form.is_valid():
-      handle_uploaded_file(request.FILES['file'], request.user)
+      for f in request.FILES.getlist('files'):
+        handle_uploaded_file(f, request.user)
       return HttpResponseRedirect('/import/')
   else:
     form = UploadFileForm()
