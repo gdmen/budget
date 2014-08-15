@@ -3313,6 +3313,15 @@
   },
   {
     "fields": {
+      "user": 0,
+      "parent": 34,
+      "name": "gym equipment"
+    },
+    "model": "api.Category",
+    "pk": 41
+  },
+  {
+    "fields": {
       "category": 20,
       "term": "PAYROLL",
       "user": 0

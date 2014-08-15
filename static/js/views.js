@@ -22,7 +22,7 @@ App.Views.CategorizeTransaction = Backbone.Marionette.ItemView.extend({
   tagName: "tr",
   className: "transaction",
   triggers: {
-    "click .save": "save:model"
+    "change #category": "save:model"
   },
   constructor: function () {
     var view = this;
@@ -32,7 +32,6 @@ App.Views.CategorizeTransaction = Backbone.Marionette.ItemView.extend({
   save: function () {
     var view = this;
     var category = view.$el.find("#category").val();
-    console.log(view.model);
     view.model.set("category", {'pk': GLOBAL.categories_lookup[category]});
     view.model.save();
   },

@@ -30,7 +30,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (helper = helpers.payee) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.payee); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</td>\n<td><a class=\"save\">save</a></td>\n";
+    + "</td>\n";
   return buffer;
   });
 templates['categorize_transactions'] = template(function (Handlebars,depth0,helpers,partials,data) {
@@ -43,7 +43,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (helper = helpers.remaining) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.remaining); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</h1>\n\n<table id=\"transaction-table\">\n<thead>\n  <tr class='header'>\n    <th>Date</th>\n    <th>Institution</th>\n    <th>Account</th>\n    <th>Type</th>\n    <th>Amount</th>\n    <th>Category</th>\n    <th>Payee</th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n</table>\n";
+    + "</h1>\n\n<table id=\"transaction-table\">\n<thead>\n  <tr class='header'>\n    <th>Date</th>\n    <th>Institution</th>\n    <th>Account</th>\n    <th>Type</th>\n    <th>Amount</th>\n    <th>Category</th>\n    <th>Payee</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n</table>\n";
   return buffer;
   });
 templates['transaction'] = template(function (Handlebars,depth0,helpers,partials,data) {
