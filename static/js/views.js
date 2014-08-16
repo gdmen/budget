@@ -83,7 +83,6 @@ App.Views.Insight = Backbone.Marionette.ItemView.extend({
         }, 0))
       ]
     }).value();
-    //view.charts.dailySpend.xAxis[0].setCategories(_.pluck(data, 'date'));
     view.charts.dailySpend.series[0].setData(data);
   },
   serializeData: function () {
@@ -96,7 +95,6 @@ App.Views.Insight = Backbone.Marionette.ItemView.extend({
   },
   onShow: function () {
     var view = this;
-//view.$el.find("#daily-spend").highcharts({
     view.charts.dailySpend = new Highcharts.Chart({
       chart: {
         renderTo: "daily-spend",
@@ -115,8 +113,10 @@ App.Views.Insight = Backbone.Marionette.ItemView.extend({
           borderWidth: 0
         }
       },
+      legend: {
+        enabled: false
+      },
       series: [{
-        name: 'Daily Spend',
         color: 'rgba(60,186,61,1)',
         data: [],
         tooltip: {

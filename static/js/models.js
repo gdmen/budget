@@ -29,8 +29,8 @@ App.Models.BriefTransactionList = App.Models.BaseCollection.extend({
   model: App.Models.BriefTransaction,
   initialize: function (start, end) {
     var view = this;
-    var start = start;
-    var end = end;
+    view.start = start;
+    view.end = end;
   },
   url: function () {
     var view = this;
@@ -39,7 +39,7 @@ App.Models.BriefTransactionList = App.Models.BaseCollection.extend({
       url += "date__gte=" + view.start + "&";
     }
     if (view.end) {
-      url += "date__lte=" + view.end + "&";
+      url += "date__lt=" + view.end + "&";
     }
     return url;
   },

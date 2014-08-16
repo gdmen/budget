@@ -34,7 +34,7 @@ App.Router = Backbone.Marionette.AppRouter.extend({
 
   routeInsight: function () {
     console.log("INSIGHT");
-    transactions = new App.Models.BriefTransactionList();
+    transactions = new App.Models.BriefTransactionList(start="2014-06-01", end="2014-07-01");
     transactions.fetch();
     var view = new App.Views.Insight({
       collection: transactions
