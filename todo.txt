@@ -3,15 +3,17 @@
   > Use previous substring matches w/ prompt for cache
   > Add regex support
   > Add priority ordering of rule application
-- Remove:
-  > internal transfers
-  > returns
 - How to handle e.g. Amazon?
   > Forward order confirmation email?
 
-
-
-
+Graphs:
+- Top level view:
+  - each period:
+    - income | budgeted spend | actual spend (% of budget) | net diff
+- Period view:
+  > start and end date selectors
+  - income | budgeted spend | actual spend (% of budget) | net diff
+  - stacked bar graph with budgeted & actual spend
 
 ###
 - Don't return user:pk from resources?
