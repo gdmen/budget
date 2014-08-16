@@ -81,9 +81,23 @@ App.Views.Insight = Backbone.Marionette.ItemView.extend({
         Math.abs(_.reduce(_.pluck(value, 'amount'), function (memo, amt) {
           return memo + Math.min(0, parseFloat(amt));
         }, 0))
-      ]
+      ];
     }).value();
     view.charts.dailySpend.series[0].setData(data);
+    data = _
+    .chain(view.collection.toJSON())
+    .groupBy(function(e) {
+      return e.category.name;
+    })
+    .map(function(value, key) {
+      return [
+        key,
+        Math.abs(_.reduce(_.pluck(value, 'amount'), function (memo, amt) {
+          return memo + Math.min(0, parseFloat(amt));
+        }, 0))
+      ];
+    }).value();
+    view.charts.categorySpend.series[0].setData(data);
   },
   serializeData: function () {
     var view = this;
@@ -105,6 +119,36 @@ App.Views.Insight = Backbone.Marionette.ItemView.extend({
       },
       xAxis: {
         type: 'datetime'
+      },
+      plotOptions: {
+        column: {
+          grouping: false,
+          shadow: false,
+          borderWidth: 0
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      series: [{
+        color: 'rgba(60,186,61,1)',
+        data: [],
+        tooltip: {
+          valuePrefix: '$',
+          valueDecimals: 2
+        }
+      }]
+    });
+    view.charts.categorySpend = new Highcharts.Chart({
+      chart: {
+        renderTo: "category-spend",
+        type: 'column'
+      },
+      title: {
+        text: 'Category Spend'
+      },
+      xAxis: {
+        categories: []
       },
       plotOptions: {
         column: {

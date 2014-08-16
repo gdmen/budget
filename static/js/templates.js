@@ -52,7 +52,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div id=\"daily-spend\" style=\"min-width: 400px; height: 400px; margin: 0 auto\">\n</div>\n";
+  return "<div id=\"daily-spend\" style=\"min-width: 400px; height: 400px; margin: 0 auto\">\n</div>\n<div id=\"category-spend\" style=\"min-width: 400px; height: 400px; margin: 0 auto\">\n</div>\n";
   });
 templates['transaction'] = template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
