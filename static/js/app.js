@@ -20,16 +20,20 @@ $(function () {
 });
 
 // Prepare GLOBAL vars
-function generate_select_html (tree) {
+function generate_select_html (tree, selected) {
   var these = "";
   _.each(tree, function (elem) {
     var this_str = "";
     if (elem.children) {
       this_str = "<optgroup label=\"" + elem.name + "\">";
-      this_str += generate_select_html(elem.children);
+      this_str += generate_select_html(elem.children, selected);
       this_str += "</optgroup>";
     } else {
-      this_str = "<option>" + elem.name + "</option>";
+      this_str = "<option";
+      if (elem.name == selected) {
+        this_str += " selected";
+      }
+      this_str += ">" + elem.name + "</option>";
     }
     these += this_str;
   });
@@ -45,7 +49,9 @@ function generate_lookup_dict (tree) {
   });
   return dict;
 }
-GLOBAL.categories_html = generate_select_html(GLOBAL.categories);
+GLOBAL.get_categories_html = function (selected) {
+  return "<option></option>" + generate_select_html(GLOBAL.categories, selected);
+};
 GLOBAL.categories_lookup = generate_lookup_dict(GLOBAL.categories);
 
 console.log(GLOBAL.categories_lookup);

@@ -37,10 +37,14 @@ App.Views.CategorizeTransaction = Backbone.Marionette.ItemView.extend({
   },
   serializeData: function () {
     var view = this;
+    var category = view.model.get("category");
+    if (category) {
+      category = category.name;
+    }
     return _.extend(
       Backbone.Marionette.ItemView.prototype.serializeData.call(view),
       {
-        category_select_html: GLOBAL.categories_html
+        category_select_html: GLOBAL.get_categories_html(selected=category)
       }
     );
   }
@@ -53,7 +57,7 @@ App.Views.CategorizeTransactions = Backbone.Marionette.CompositeView.extend({
   childViewContainer: "tbody",
   constructor: function () {
     var view = this;
-    view.collection = new App.Models.TransactionList(uncategorized_only = true);
+    view.collection = new App.Models.TransactionList();
     view.collection.fetch({
       success: function () {
         view.render();
