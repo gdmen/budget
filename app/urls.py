@@ -13,7 +13,9 @@ api_router = Api(api_name='v0')
 api_router.register(InstitutionResource())
 api_router.register(AccountResource())
 api_router.register(CategoryResource())
+api_router.register(BriefCategoryResource())
 api_router.register(TransactionResource())
+api_router.register(BriefTransactionResource())
 
 urlpatterns = patterns('',
     url(r'', include('django.contrib.auth.urls')),

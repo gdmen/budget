@@ -1,5 +1,6 @@
 from tastypie.authentication import SessionAuthentication
 from tastypie.authorization import DjangoAuthorization
+from tastypie.constants import ALL, ALL_WITH_RELATIONS
 from tastypie.resources import ModelResource
 from tastypie import fields
 from .models import *
@@ -59,6 +60,24 @@ class CategoryResource(AuthorizeUserResource):
   class Meta(AuthorizeUserResource.Meta):
     queryset = Category.objects.all()
     resource_name = 'category'
+    filtering = {
+      "name": ALL
+    }
+
+  def obj_create(self, bundle, **kwargs):
+    return super(CategoryResource, self).obj_create(
+        bundle, user=bundle.request.user)
+
+
+class BriefCategoryResource(AuthorizeUserResource):
+
+  class Meta(AuthorizeUserResource.Meta):
+    queryset = Category.objects.all()
+    resource_name = 'brief_category'
+    fields = ['name', 'parent']
+    filtering = {
+      "name": ALL
+    }
 
   def obj_create(self, bundle, **kwargs):
     return super(CategoryResource, self).obj_create(
@@ -74,7 +93,26 @@ class TransactionResource(AuthorizeUserResource):
     queryset = Transaction.objects.all().order_by('date')
     resource_name = 'transaction'
     filtering = {
-      "category": ('exact',),
+      "category": ALL_WITH_RELATIONS,
+      "date": ALL
+    }
+
+  def obj_create(self, bundle, **kwargs):
+    return super(TransactionResource, self).obj_create(
+        bundle, user=bundle.request.user)
+
+
+class BriefTransactionResource(AuthorizeUserResource):
+
+  category = fields.ForeignKey(BriefCategoryResource, 'category', null=True, full=True)
+
+  class Meta(AuthorizeUserResource.Meta):
+    queryset = Transaction.objects.all().order_by('date')
+    resource_name = 'brief_transaction'
+    fields = ['date', 'amount', 'category']
+    filtering = {
+      "category": ALL_WITH_RELATIONS,
+      "date": ALL
     }
 
   def obj_create(self, bundle, **kwargs):
