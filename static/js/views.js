@@ -60,3 +60,70 @@ App.Views.CategorizeTransactions = Backbone.Marionette.CompositeView.extend({
     };
   }
 });
+
+App.Views.Insight = Backbone.Marionette.ItemView.extend({
+  template: Handlebars.templates["insight"],
+  id: "insight",
+  tagName: "div",
+  initialize: function () {
+    var view = this;
+    view.charts = {};
+    view.listenTo(view.collection, 'sync', view.collectionReloaded);
+  },
+  collectionReloaded: function () {
+    var view = this;
+    var data = _
+    .chain(view.collection.toJSON())
+    .groupBy('date')
+    .map(function(value, key) {
+      return [
+        Date.parse(key),
+        Math.abs(_.reduce(_.pluck(value, 'amount'), function (memo, amt) {
+          return memo + Math.min(0, parseFloat(amt));
+        }, 0))
+      ]
+    }).value();
+    //view.charts.dailySpend.xAxis[0].setCategories(_.pluck(data, 'date'));
+    view.charts.dailySpend.series[0].setData(data);
+  },
+  serializeData: function () {
+    var view = this;
+    return _.extend(
+      Backbone.Marionette.ItemView.prototype.serializeData.call(view),
+      {
+      }
+    );
+  },
+  onShow: function () {
+    var view = this;
+//view.$el.find("#daily-spend").highcharts({
+    view.charts.dailySpend = new Highcharts.Chart({
+      chart: {
+        renderTo: "daily-spend",
+        type: 'column'
+      },
+      title: {
+        text: 'Daily Spend'
+      },
+      xAxis: {
+        type: 'datetime'
+      },
+      plotOptions: {
+        column: {
+          grouping: false,
+          shadow: false,
+          borderWidth: 0
+        }
+      },
+      series: [{
+        name: 'Daily Spend',
+        color: 'rgba(60,186,61,1)',
+        data: [],
+        tooltip: {
+          valuePrefix: '$',
+          valueDecimals: 2
+        }
+      }]
+    });
+  }
+});

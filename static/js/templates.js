@@ -46,6 +46,14 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     + "</h1>\n\n<table id=\"transaction-table\">\n<thead>\n  <tr class='header'>\n    <th>Date</th>\n    <th>Institution</th>\n    <th>Account</th>\n    <th>Type</th>\n    <th>Amount</th>\n    <th>Category</th>\n    <th>Payee</th>\n  </tr>\n</thead>\n<tbody>\n</tbody>\n</table>\n";
   return buffer;
   });
+templates['insight'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<div id=\"daily-spend\" style=\"min-width: 400px; height: 400px; margin: 0 auto\">\n</div>\n";
+  });
 templates['transaction'] = template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};

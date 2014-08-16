@@ -107,7 +107,7 @@ class BriefTransactionResource(AuthorizeUserResource):
   category = fields.ForeignKey(BriefCategoryResource, 'category', null=True, full=True)
 
   class Meta(AuthorizeUserResource.Meta):
-    queryset = Transaction.objects.all().order_by('date')
+    queryset = Transaction.objects.exclude(category__name__contains="transfer").order_by('date')
     resource_name = 'brief_transaction'
     fields = ['date', 'amount', 'category']
     filtering = {
