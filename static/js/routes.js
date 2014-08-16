@@ -23,7 +23,11 @@ App.Router = Backbone.Marionette.AppRouter.extend({
 
   routeCategorize: function () {
     console.log("CATEGORIZE");
-    var view = new App.Views.CategorizeTransactions();
+    transactions = new App.Models.TransactionList();
+    transactions.fetch();
+    var view = new App.Views.CategorizeTransactions({
+      collection: transactions
+    });
     App.regionContent.show(view);
   },
 

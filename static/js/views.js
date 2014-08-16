@@ -21,12 +21,11 @@ App.Views.CategorizeTransaction = Backbone.Marionette.ItemView.extend({
   template: Handlebars.templates["categorize_transaction"],
   tagName: "tr",
   className: "transaction",
-  triggers: {
-    "change #category": "save:model"
+  events: {
+    "change #category": "save"
   },
   constructor: function () {
     var view = this;
-    view.on("save:model", view.save);
     Backbone.Marionette.ItemView.apply(view, arguments);
   },
   save: function () {
@@ -55,16 +54,6 @@ App.Views.CategorizeTransactions = Backbone.Marionette.CompositeView.extend({
   id: "transaction-list",
   childView: App.Views.CategorizeTransaction,
   childViewContainer: "tbody",
-  constructor: function () {
-    var view = this;
-    view.collection = new App.Models.TransactionList();
-    view.collection.fetch({
-      success: function () {
-        view.render();
-      }
-    });
-    Backbone.Marionette.CompositeView.apply(view, arguments);
-  },
   serializeData: function () {
     return {
       remaining: this.collection.length
